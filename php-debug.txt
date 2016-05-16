@@ -1,0 +1,13 @@
+[XDebug]
+zend_extension ="php_xdebug-2.4.0rc4-7.0-vc14.dll"
+;zend_extension ="php_xdebug-2.4.0rc4-7.0-vc14-x86_64.dll"
+xdebug.remote_enable = 1
+;xdebug.remote_autostart=true
+xdebug.profiler_enable = 1
+xdebug.profiler_output_dir = "\xampp\tmp"
+xdebug.profiler_output_name = "cachegrind.out.%t-%s"
+
+; with no limits (maximum nesting is 1023)
+xdebug.var_display_max_depth = -1 
+xdebug.var_display_max_children = -1
+xdebug.var_display_max_data = -1 

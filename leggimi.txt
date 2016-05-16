@@ -1,0 +1,101 @@
+crmapp-2.0.0		    16-05-2016
+- Passaggio a php 7
+  - La nuova versione di codeception quando crea un stepobject lo crea in:
+     D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance
+    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:
+     $I = new Step\Acceptance\CRMOperatorSteps($scenario);
+crmapp-1.0.0                10-01-2015
+- risolto problema published per vendor/bower/jquery/dist:
+  - aggiornato globalmente package  fxp/composer-asset-plugin-1.0.0-beta4.
+  - aggiornati i package di crmapp con composer update.(l'errore c'e' ancora).
+  - aggiunto a composer.json :
+    	"extra": {
+        
+		"asset-installer-paths": {
+            
+			"npm-asset-library": "vendor/npm",
+            
+			"bower-asset-library": "vendor/bower"
+        
+		}
+    
+	}
+  - Siccome composer update da un errore di aggiornamento del package 
+    bower-asset/jquery2.1.*@stable eseguito comando
+    composer require --pref-dist bower-asset/bootstrap "*"
+    Eseguito composer update con esito OK. 
+- risolto problema che l'activeform non salva niente nel database:
+  - modificato la rule per la data in CustomerRecord :
+      ... 
+      ['birth_date', 'date', 'format' => 'php:Y-m-d'],
+      ...
+- Attenzione al redirect ad esempio $this->redirect('/customer') punta a 
+  localhost/customer. E' necessario scrivere $this->redirect(['/customers']).
+- Il metodo CustomerController->actionAdd puo' essere scritto:
+    public function actionAdd()
+	
+    {
+      if (($customer->load(Yii::$app->request->post()) && 
+           
+           $phone->load(Yii::$app->request->post())) && 
+           $this->store($customer,$phone)) {
+           
+     
+            return $this->redirect(['/customers']);
+        
+      } else {
+				
+                 return $this->render('add', compact('customer', 'phone'));
+        
+      }
+    }
+  dove il metodo store e' cosi' definito:
+    private function store(CustomerRecord $customer_record, PhoneRecord $phone_record)
+   
+    {
+   	
+	if ($customer_record->save())
+ {
+			
+		$phone_record->customer_id = $customer_record->id;
+   
+		if ($phone_record->save())
+				 
+			return true;	
+   	
+        }
+   	
+	return false;
+		   
+   
+    }    
+----------------------------------------------------------------------------------
+crmapp-1.1.0
+- Aggiustata test codeception:
+ - Modificato la funzione CRMUserSteps->fillInPhoneFieldWithDataFrom cambiano la riga
+	'PhoneRecord[number]', $customer_data['PhoneRecord[number]']
+   in
+	'phone_number', $customer_data['PhoneRecord[number]']
+- creata tabella services tramite ./yii migrate
+- Installato yiisoft-yii2-gii che installa anche 
+	bower-asset/typeahead.js
+	phpspec/php-diff
+	yiisoft/yii2-bootstrap
+----------------------------------------------------------------------------------
+crmapp-1.1.1
+- Aggiuistato i test acceptance (tranne DeleteServiceCept):
+ - Copiati i file CRMServicesManagementSteps, DeleteServiceCept, EditServiceCept e 
+   RegisterNewServiceCept.
+ - Modificato CRMServicesManagementSteps:
+   1.-  class CRMServicesManagementSteps extends CRMGuestSteps ---->  
+	class CRMServicesManagementSteps extends \AcceptanceTester
+   2.-  $I->seeCurrentUrlEquals('/services/create');   ---->
+        $I->seeCurrentUrlMatches('/services\/create/');
+   3,. Messi in rem le due chiamate a $I->wait(1);
+----------------------------------------------------------------------------------
+crmapp-1.1.2
+- Prova webdriver test
+ -Aggiustati i 5 test. Ma e' necessario usare il server selenium. Con phantomjs 
+  funzionano solo 4 test tranne DeleteServiceCept, perche' non funziona seeInPopup!
+ -Inoltre stranamente il test QueryCustomerByPhoneNumberCept, dava errore. Per 
+  risolvere duplicate le righe $I->amInAddCustomerUi() e $I->amInQueryCustomerUi()!!!
