@@ -10,12 +10,12 @@ echo \yii\widgets\ListView::widget(
         ],
         'itemView' => '_customer',
         'dataProvider' => $records,
-		/*'pager' => [
+		'pager' => [
 			'firstPageLabel' => 'first',
 			'lastPageLabel' => 'last',
 			'prevPageLabel' => '<span class="glyphicon glyphicon-chevron-left"></span>',
 			'nextPageLabel' => '<span class="glyphicon glyphicon-chevron-right"></span>',
 			'maxButtonCount' => 3,
-		],*/
+		],
     ]
 );

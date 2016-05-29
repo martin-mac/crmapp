@@ -101,8 +101,8 @@ class CustomersController extends Controller
 		return new ArrayDataProvider(
 			[
 				'allModels' => $data,
-			    'pagination' => false,	
-                #'pagination' => ['pagesize'=>10]
+			    #'pagination' => false,	
+                'pagination' => ['pagesize'=>3]
 			]
 		);
 	}

@@ -1,9 +1,23 @@
-crmapp-2.0.0		    16-05-2016
+crmapp-2.0.0		    29-05-2016
+- Composer update: ok
+- Modificato il migrate della tabella phone: eliminato errore UNIQUE su customer_id.
+- Unificati i controller in utilities/SubmodelController.
+- Terminato capitolo 3 ed eseguito commit di git, cercando di mantenere la versione
+  allinieata a questo leggimi.txt.
+
+			    20-05-2016
+- Dopo la migrazione per service e la moddifica di main.php, copiati il step object    
+  CRMServicesManagementSteps in D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance.
+  Modificato namespace e copiati i seguenti acceptance tester:
+   -  RegisterNewServiceCept
+   -  EditServiceCept
+   +  DeleteServiceCept (da errore su seeInPopup - vedi note vers. 1.1.2) 
+
+			    16-05-2016
 - Passaggio a php 7
   - La nuova versione di codeception quando crea un stepobject lo crea in:
      D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance
-    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:
-     $I = new Step\Acceptance\CRMOperatorSteps($scenario);
+    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:          $I = new Step\Acceptance\CRMOperatorSteps($scenario);
 crmapp-1.0.0                10-01-2015
 - risolto problema published per vendor/bower/jquery/dist:
   - aggiornato globalmente package  fxp/composer-asset-plugin-1.0.0-beta4.
