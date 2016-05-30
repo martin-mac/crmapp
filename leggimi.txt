@@ -1,3 +1,38 @@
++ Implementazione interfaccia: Appendix B.
+----------------------------------------------------------------------------------   
+crmapp-2.0.1		    30-05-2016
+- Aggiunto branch: git checkout -b markrenderer
+- alias cept="./vendor/bin/codecept"
+  cept generate:cept acceptance Documentation
+	- Crea uno script che inizia con $I=new AcceptanceTester($scenario), modificata
+		in $I=new Step\Acceptance\CRMUserSteps($scenario) perche' e' in quest'ultima 
+		classe che viene implementata la funzione seeLargeBodyOfText() che chiamate
+		seeContentIsLong (un wrap di assertGreaterThen) quindi implementato nella 
+        classe Helper\Acceptance ( tests/_support/Helper/Acceptance.php).
+    - Implementata azione e vista.
+    - cept build
+    - cept run 	tests/acceptance/DocumentationCept.php - Da Ok se momentaneamente 
+	  mettiamo in docindex.md un <h1> iniziale e poi un <p> prima del paragrafo.
+	- Rimettiamo file docindex con codifica Markdown e creiamo in utilities oggetto
+	  MarkdownRenederer che estende ViewRenderer e modificato file config/web.php 
+	  nella sezione componenets :
+        'view' => [
+			'renderers' => [
+				'md' => [
+				'class' => 'app\utilities\MarkdownRenderer'
+				]
+			]
+		],	  
+ - Dal branch markrenderer eseguire
+   - git add.
+   - git commit -m "implementato markdown renderer"
+   - git checkout master
+   - git merge markrenderer
+   - git branch -d markrenderer
+   N.B: Se vogliamo annullare anche fisicamente le modifiche e tornare a crmapp-2.0.0
+        dopo il commit, eseguire : 
+        - git reset --hard HEAD^   
+----------------------------------------------------------------------------------
 crmapp-2.0.0		    29-05-2016
 - Composer update: ok
 - Modificato il migrate della tabella phone: eliminato errore UNIQUE su customer_id.
@@ -17,7 +52,9 @@ crmapp-2.0.0		    29-05-2016
 - Passaggio a php 7
   - La nuova versione di codeception quando crea un stepobject lo crea in:
      D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance
-    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:          $I = new Step\Acceptance\CRMOperatorSteps($scenario);
+    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:          
+	   $I = new Step\Acceptance\CRMOperatorSteps($scenario);
+----------------------------------------------------------------------------------	   
 crmapp-1.0.0                10-01-2015
 - risolto problema published per vendor/bower/jquery/dist:
   - aggiornato globalmente package  fxp/composer-asset-plugin-1.0.0-beta4.

@@ -12,6 +12,13 @@ return [
 		'request' => [
 			'cookieValidationKey' => '5w9joXc0jtUC6bF1RXGm0CjKeIxfOGdw',
 		],
+		'view' => [
+			'renderers' => [
+				'md' => [
+				'class' => 'app\utilities\MarkdownRenderer'
+				]
+			]
+		],
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false
