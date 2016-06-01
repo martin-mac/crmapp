@@ -8,6 +8,8 @@ use app\models\service\ServiceSearchRecord;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\Response;
+use app\utilities\YamlResponseFormatter;
 
 /**
  * ServicesController implements the CRUD actions for ServiceRecord model.
@@ -121,4 +123,25 @@ class ServicesController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+	public function actionJson()
+	{
+		$models = ServiceRecord::find()->all();
+		$data = array_map(function ($model) {return $model->attributes;}, $models);
+		#$data = serialize($data);
+		$response = Yii::$app->response;
+		$response->format = Response::FORMAT_JSON;
+		#$response->format = Response::FORMAT_XML;
+		#$response->format = Response::FORMAT_RAW;
+		$response->data = $data;
+		return $response;
+	}
+	public function actionYaml()
+	{
+		$models = ServiceRecord::find()->all();
+		$data = array_map(function ($model) {return $model->attributes;}, $models);
+		$response = Yii::$app->response;
+		$response->format = YamlResponseFormatter::FORMAT;
+		$response->data = $data;
+		return $response;
+	}
 }

@@ -13,6 +13,10 @@ return [
 			'cookieValidationKey' => '5w9joXc0jtUC6bF1RXGm0CjKeIxfOGdw',
 		],
 		'view' => [
+		    'theme' => [
+                'class' => yii\base\Theme::className(),
+                'basePath' => '@app/themes/snowy',
+            ],
 			'renderers' => [
 				'md' => [
 				'class' => 'app\utilities\MarkdownRenderer'
@@ -22,6 +26,13 @@ return [
 		'urlManager' => [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false
+		],
+		'response' => [
+			'formatters' => [
+				'yaml' => [
+				'class' => 'app\utilities\YamlResponseFormatter'
+				]
+			]
 		],
 		'db' => require(__DIR__ . '/db.php'),
 	],

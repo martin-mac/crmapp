@@ -1,4 +1,32 @@
 + Implementazione interfaccia: Appendix B.
+crmapp-2.0.2		    01-06-2016
+- Customer Response Formatter
+  - Nel namespace app\utilities creata classe YamlResponseFormatter che 
+    implementa ResponseFormatterInterface. Creata sua funzione format che usa 
+	Symfony\Component\Yaml\Yaml:Dump. Attivato in web.php nella sezione components
+					'response' => [
+						'formatters' => [
+							'yaml' => [
+								'class' => 'app\utilities\YamlResponseFormatter'
+							]
+						[
+					]
+  - Nel controller ServiceController creata actionYaml che mette in $data l'array
+    con tutti i record della tabella services e dopo settato response->format='yaml'
+	associa a response->data=$data.
+- Implementato AssetBundler ApplicationUiAssetBundle che registra nella vista 
+				  assets/ui/css/main.css
+				  assets/ui/js/main.js
+- Implementato un theme alla vista homepage:
+  - Creato themes/snowy/views/site/homepage.php
+  - In assets creato SnowAssetsBundle che registra assets/snow/snow.css
+  - In web.php nella sezione components
+					'view' => [
+						'theme' => [
+							'class' => yii\base\Theme::className(),
+							'basePath' => '@app/themes/snowy',
+						]
+                    ]						
 ----------------------------------------------------------------------------------   
 crmapp-2.0.1		    30-05-2016
 - Aggiunto branch: git checkout -b markrenderer
