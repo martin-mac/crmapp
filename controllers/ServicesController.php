@@ -39,7 +39,7 @@ class ServicesController extends Controller
     {
         $searchModel = new ServiceSearchRecord();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
+        $dataProvider->pagination = ['pageSize'=>6];
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

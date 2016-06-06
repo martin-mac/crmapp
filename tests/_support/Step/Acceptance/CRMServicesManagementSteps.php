@@ -3,6 +3,8 @@ namespace Step\Acceptance;
 
 class CRMServicesManagementSteps extends \AcceptanceTester
 {
+    #public $username = 'AnnieManager';
+    #public $password = 'Shiny 3 things hmm, vulnerable';
 
     const SERVICES_LIST_SELECTOR = '.grid-view';
 
@@ -43,6 +45,9 @@ class CRMServicesManagementSteps extends \AcceptanceTester
     function seeServiceInList($service_data)
     {
         $I = $this;
+		if ($I->seePageHasElement(['link' => 'last'])) {
+			$I->click(['link' => 'last']);
+		}
         $I->see($service_data['ServiceRecord[name]'], self::SERVICES_LIST_SELECTOR);
     }
 
@@ -50,7 +55,7 @@ class CRMServicesManagementSteps extends \AcceptanceTester
     {
         $I = $this;
         $I->click('button[type=submit]');
-        #$I->wait(1);
+        $I->wait(1);
     }
 
     public function seeIAmInListServicesUi()
@@ -89,6 +94,9 @@ class CRMServicesManagementSteps extends \AcceptanceTester
             $service_data['ServiceRecord[name]'],
             'Update'
         );
+		if ($I->seePageHasElement(['link' => 'last'])) {
+			$I->click(['link' => 'last']);
+		}
         $I->seeElement($xpath);
     }
 
@@ -150,7 +158,7 @@ class CRMServicesManagementSteps extends \AcceptanceTester
             'Delete'
         );
         $I->click($xpath);
-        #$I->wait(1);
+        $I->wait(1);
     }
 
 }

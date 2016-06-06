@@ -34,6 +34,9 @@ return [
 				]
 			]
 		],
+		'user' => [
+            'identityClass' => 'app\models\user\UserRecord'
+        ],
 		'db' => require(__DIR__ . '/db.php'),
 	],
 ];

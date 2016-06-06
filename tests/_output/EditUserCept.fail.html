@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
+<meta charset="UTF-8" />
+<title>User Records</title>
+<link rel="stylesheet" href="/crmapp/web/assets/e845efa5/css/bootstrap.css" />
+<link rel="stylesheet" href="/crmapp/web/assets/d81496c5/css/main.css" /><meta content="_csrf" name="csrf-param" />
+    <meta content="VUEzMHZaVHo7A1VYOx8jM2QuYkU6MgQXIRtZcgMAEg0GI0VCIj4DCQ==" name="csrf-token" />
+</head>
+<body>
+<div class="container">
+<div class="user-record-index">
+
+    <h1>User Records</h1>
+    
+    <p>
+        <a href="/crmapp/web/users/create" class="btn btn-success">Create User Record</a>    </p>
+    <div class="grid-view" id="w0"><div class="summary">Showing <b>1-6</b> of <b>6</b> items.</div>
+<table class="table table-striped table-bordered"><thead>
+<tr><th>#</th><th><a data-sort="id" href="/crmapp/web/users/index?sort=id">ID</a></th><th><a data-sort="username" href="/crmapp/web/users/index?sort=username">Username</a></th><th class="action-column"> </th></tr><tr class="filters" id="w0-filters"><td> </td><td><input type="text" name="UserSearchModel[id]" class="form-control" /></td><td><input type="text" name="UserSearchModel[username]" class="form-control" /></td><td> </td></tr>
+</thead>
+<tbody>
+<tr data-key="3"><td>1</td><td>3</td><td>vraynor</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=3"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=3"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=3"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+<tr data-key="4"><td>2</td><td>4</td><td>mhickle</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=4"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=4"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=4"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+<tr data-key="5"><td>3</td><td>5</td><td>calista39</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=5"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=5"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=5"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+<tr data-key="10"><td>4</td><td>10</td><td>pippo</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=10"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=10"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=10"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+<tr data-key="11"><td>5</td><td>11</td><td>reymundo22</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=11"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=11"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=11"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+<tr data-key="12"><td>6</td><td>12</td><td>sssss</td><td><a data-pjax="0" aria-label="View" title="View" href="/crmapp/web/users/view?id=12"><span class="glyphicon glyphicon-eye-open"></span></a> <a data-pjax="0" aria-label="Update" title="Update" href="/crmapp/web/users/update?id=12"><span class="glyphicon glyphicon-pencil"></span></a> <a data-pjax="0" data-method="post" data-confirm="Are you sure you want to delete this item?" aria-label="Delete" title="Delete" href="/crmapp/web/users/delete?id=12"><span class="glyphicon glyphicon-trash"></span></a></td></tr>
+</tbody></table>
+</div></div>
+<footer class="footer">Powered by <a rel="external" href="http://www.yiiframework.com/">Yii Framework</a></footer>
+</div>
+<script src="/crmapp/web/assets/2c09aa55/jquery.js"></script>
+<script src="/crmapp/web/assets/66120aa9/yii.js"></script>
+<script src="/crmapp/web/assets/66120aa9/yii.gridView.js"></script>
+<script src="/crmapp/web/assets/d81496c5/js/main.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+jQuery('#w0').yiiGridView({"filterUrl":"\/crmapp\/web\/users","filterSelector":"#w0-filters input, #w0-filters select"});
+});</script>
+
+</body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1024" height="528"></canvas></html>

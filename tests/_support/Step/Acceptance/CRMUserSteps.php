@@ -11,10 +11,7 @@ class CRMUserSteps extends \AcceptanceTester
 	function fillInPhoneFieldWithDataFrom($customer_data)
 	{
 		$I = $this;
-		$I->fillField(
-			//'PhoneRecord[number]', $customer_data['PhoneRecord[number]']
-			'phone_number', $customer_data['PhoneRecord[number]']
-		);
+		$I->fillField('phone_number', $customer_data['PhoneRecord[number]']);
 	}
 	function clickSearchButton()
 	{
@@ -41,5 +38,45 @@ class CRMUserSteps extends \AcceptanceTester
         $I = $this;
         $text = $I->grabTextFrom('p'); // naive selector
         $I->seeContentIsLong($text);
+    }
+/*         Nel codice book questa parte e' in CRMGuestSteps    */
+    public function seeIAmInLoginFormUi()
+    {
+        $I = $this;
+        #$I->seeCurrentUrlEquals('/site/login');
+        $I->seeCurrentUrlMatches('/site\/login/');
+    }
+
+    public function fillLoginForm($user)
+    {
+        $I = $this;
+        $I->fillField('LoginForm[username]', $user['UserRecord[username]']);
+        $I->fillField('LoginForm[password]', $user['UserRecord[password]']);
+    }
+
+    public function submitLoginForm()
+    {
+        $I = $this;
+        $I->click('button[type=submit]');
+        $I->wait(1);
+    }
+
+    public function seeIAmAtHomepage()
+    {
+        $I = $this;
+        #$I->seeCurrentUrlEquals('/');
+        $I->seeCurrentUrlEquals('/crmapp/web/');
+    }
+
+    public function seeUsername($user)
+    {
+        $I = $this;
+        $I->see($user['UserRecord[username]']);
+    }
+
+    public function dontSeeUsername($user)
+    {
+        $I = $this;
+        $I->dontSee($user['UserRecord[username]']);
     }
 }

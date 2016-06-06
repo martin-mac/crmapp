@@ -16,7 +16,7 @@ class CustomerRecord extends ActiveRecord
         return [
             ['id', 'number'],
             ['name', 'required'],
-            ['name', 'string', 'max' => 256],
+            ['name', 'string', 'max' => 255],
             ['birth_date', 'date', 'format' => 'php:Y-m-d'],
             ['notes', 'safe']
         ];

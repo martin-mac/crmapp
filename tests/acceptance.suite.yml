@@ -10,3 +10,6 @@ modules:
         - PhpBrowser:
             url: http://localhost/crmapp/web
         - \Helper\Acceptance
+        - WebDriver:
+            url: 'http://localhost/crmapp/web'
+            browser: firefox
