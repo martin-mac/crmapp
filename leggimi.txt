@@ -1,5 +1,34 @@
 + Implementazione interfaccia: Appendix B.
 
+crmapp-2.0.4		    09-06-2016
+- Capitolo 6 User Authorization and Access Control
+ - Creata migrazione add_predefined_users.
+ - Riapplicate tutte le migrazioni.
+ - Inizializzato lo schema per \yii\rbac\DbManager:
+     ./yii migrate --migrationPath='@yii/rbac/migrations' 
+   dopo aver configurato in console.php e in web.php:
+	'authManager'  => [
+
+		'class'  => 'yii\rbac\DbManager',
+ 
+                'defaultRoles' => ['guest'],
+        ],
+ - Creato cept funzionale RoleHierarchy.
+ - Creata migrazione create_roles_for_predefined_users.
+ - Eseguito il test RoleHierarchy che esegue solo la funzione DefaultRoleIsGuest
+   e quindi passa. 
+   + Verificare come utilizzare PredefinedUsersHasProperRoles in RoleHierarchy
+ - Copiati i test acceptance: AdminAccessRights, ManagerAccessRights, UserAccessRights
+   e GuestAccessRights e stepobject CRMGuest.
+ - Implementato accessController per i controller ServicesController, UsersController
+    e CustomerController. 
+ - Inseriti gli utenti nei step object:
+	user    : JoeUser / 7 wonder @ American soil
+	admin   : RobAdmin / Imitate #14th symptom of apathy
+	operator: AnnieManager / Shiny 3 things hmm, vulnerable
+ - Aggiustati tutti gli acceptance test: Esito OK (14 tests, 150 assertions)
+ - Terminato capitolo 6.
+----------------------------------------------------------------------------------  
 crmapp-2.0.3		    07-06-2016
 - Capitolo 5 User Autenticazione
   - ./yii migrate/create init_user_table

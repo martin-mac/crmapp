@@ -37,6 +37,10 @@ return [
 		'user' => [
             'identityClass' => 'app\models\user\UserRecord'
         ],
+		'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            'defaultRoles' => ['guest'],
+        ],
 		'db' => require(__DIR__ . '/db.php'),
 	],
 ];

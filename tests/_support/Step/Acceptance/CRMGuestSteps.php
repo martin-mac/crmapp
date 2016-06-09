@@ -2,7 +2,7 @@
 namespace Step\Acceptance;
 
 class CRMGuestSteps extends \AcceptanceTester
-{
+{ 
     public $username;
     public $password;
 
@@ -22,7 +22,8 @@ class CRMGuestSteps extends \AcceptanceTester
         $I->fillField('LoginForm[password]', $password);
         $I->click('Login');
         $I->wait(1); // 2
-        $I->seeCurrentUrlEquals('/'); // 3
+		#$I->seeCurrentUrlEquals('/');
+        $I->seeCurrentUrlEquals('/crmapp/web/'); // 3
     }
 
     function logout()
@@ -31,13 +32,15 @@ class CRMGuestSteps extends \AcceptanceTester
         $I->amOnPage('/');
         // Expecting that this button is presented on the homepage.
         $I->click('logout');
+		$I->wait(1);
     }
 
     public function seeIAmInLoginFormUi()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals('/site/login');
-    }
+		#$I->seeCurrentUrlEquals('/site/login');
+ 		$I->seeCurrentUrlMatches('/site\/login/');   
+	}
 
     public function fillLoginForm($user)
     {
@@ -56,8 +59,9 @@ class CRMGuestSteps extends \AcceptanceTester
     public function seeIAmAtHomepage()
     {
         $I = $this;
-        $I->seeCurrentUrlEquals('/');
-    }
+        #$I->seeCurrentUrlEquals('/');
+        $I->seeCurrentUrlEquals('/crmapp/web/'); // 3    
+	}
 
     public function seeUsername($user)
     {

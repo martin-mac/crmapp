@@ -11,6 +11,27 @@ use Yii;
 
 class CustomersController extends Controller
 {
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'actions' => ['add'],
+                        'roles' => ['manager'],
+                        'allow' => true
+                    ],
+                    [
+                        'actions' => ['index', 'query'],
+                        'roles' => ['user'],
+                        'allow' => true
+                    ],
+
+                ]
+            ]
+        ];
+    }
 	public function actionIndex()
 	{
 		if (Yii::$app->request->get('phone_number'))

@@ -6,6 +6,7 @@ use Yii;
 use app\models\user\UserRecord;
 use app\models\user\UserSearchModel;
 use yii\web\Controller;
+use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -26,6 +27,15 @@ class UsersController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'roles' => ['admin'],
+                        'allow' => true
+                    ]
+                ]
+            ]			
         ];
     }
 

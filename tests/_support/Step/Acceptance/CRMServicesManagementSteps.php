@@ -1,10 +1,10 @@
 <?php
 namespace Step\Acceptance;
 
-class CRMServicesManagementSteps extends \AcceptanceTester
+class CRMServicesManagementSteps extends CRMGuestSteps
 {
-    #public $username = 'AnnieManager';
-    #public $password = 'Shiny 3 things hmm, vulnerable';
+    public $username = 'AnnieManager';
+    public $password = 'Shiny 3 things hmm, vulnerable';
 
     const SERVICES_LIST_SELECTOR = '.grid-view';
 
@@ -23,6 +23,7 @@ class CRMServicesManagementSteps extends \AcceptanceTester
     function seeIAmInAddServiceUi()
     {
         $I = $this;
+		#$I->seeCurrentUrlEquals('/services/create');
         $I->seeCurrentUrlMatches('/services\/create/');
     }
 
