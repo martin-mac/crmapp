@@ -2,11 +2,27 @@
 return [
 	'id' => 'crmapp',
 	'basePath' => realpath(__DIR__ . '/../'),
+	'bootstrap' => ['debug'],
 	'modules' => [
         'gii' => [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['*']
         ],
+		/*'firstlevel' => [
+			'class' => 'app\utilities\FirstModule',
+ 		    'modules' => [
+				'secondlevel' => [
+					'class' => 'app\utilities\SecondModule',
+				]
+            ]
+		],*/
+		'debug' => [
+			'class' => 'yii\debug\Module',
+			#'allowedIPs' => ['IP of your development machine']
+		],
+		'api' => [
+            'class' => 'app\api\ApiModule'
+        ]
     ],
 	'components' => [
 		'request' => [

@@ -1,0 +1,1595 @@
+2016-06-22 10:32:10 [::1][-][-][error][Error] Error: Class 'app\controllers\Logger' not found in D:\xampp\htdocs\crmapp\controllers\SiteController.php:36
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionProfile()
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('profile', Array)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/profile', Array)
+#5 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#7 {main}
+2016-06-22 10:32:10 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49691'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584330.274
+    'REQUEST_TIME' => 1466584330
+]
+2016-06-22 10:32:10 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-06-22 10:32:10 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49691'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584330.274
+    'REQUEST_TIME' => 1466584330
+]
+2016-06-22 10:34:52 [::1][-][-][error][Error] Error: Class 'app\controllers\Logger' not found in D:\xampp\htdocs\crmapp\controllers\SiteController.php:36
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionProfile()
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('profile', Array)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/profile', Array)
+#5 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#7 {main}
+2016-06-22 10:34:52 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49693'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584492.187
+    'REQUEST_TIME' => 1466584492
+]
+2016-06-22 10:34:52 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-06-22 10:34:52 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49693'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584492.187
+    'REQUEST_TIME' => 1466584492
+]
+2016-06-22 10:35:33 [::1][-][-][error][Error] Error: Class 'app\controllers\Logger' not found in D:\xampp\htdocs\crmapp\controllers\SiteController.php:36
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionProfile()
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('profile', Array)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/profile', Array)
+#5 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#7 {main}
+2016-06-22 10:35:33 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49695'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584533.153
+    'REQUEST_TIME' => 1466584533
+]
+2016-06-22 10:35:33 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-06-22 10:35:33 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49695'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584533.153
+    'REQUEST_TIME' => 1466584533
+]
+2016-06-22 10:36:32 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:42
+2016-06-22 10:36:32 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:36:32 [::1][-][-][error][Error] Error: Class 'app\controllers\Response' not found in D:\xampp\htdocs\crmapp\controllers\SiteController.php:49
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionProfile()
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('profile', Array)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/profile', Array)
+#5 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#7 {main}
+2016-06-22 10:36:32 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49697'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584592.23
+    'REQUEST_TIME' => 1466584592
+]
+2016-06-22 10:36:32 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-06-22 10:36:32 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49697'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584592.23
+    'REQUEST_TIME' => 1466584592
+]
+2016-06-22 10:37:03 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:37:03 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:37:03 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49699'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584623.602
+    'REQUEST_TIME' => 1466584623
+]
+2016-06-22 10:37:04 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:37:04 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:37:03 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49699'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584623.929
+    'REQUEST_TIME' => 1466584623
+]
+2016-06-22 10:37:36 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:37:36 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:37:36 [::1][-][-][error][yii\base\InvalidParamException] yii\base\InvalidParamException: Response content must not be an array. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Response.php:960
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Response.php(311): yii\web\Response->prepare()
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(381): yii\web\Response->send()
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+2016-06-22 10:37:36 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49700'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584656.315
+    'REQUEST_TIME' => 1466584656
+]
+2016-06-22 10:38:29 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:38:29 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:38:29 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49702'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584709.589
+    'REQUEST_TIME' => 1466584709
+]
+2016-06-22 10:38:30 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:38:30 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:38:29 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49702'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584709.885
+    'REQUEST_TIME' => 1466584709
+]
+2016-06-22 10:41:05 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/debug/profile". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/debug/prof...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:41:05 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49709'
+    'REDIRECT_URL' => '/crmapp/web/site/debug/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/debug/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584865.265
+    'REQUEST_TIME' => 1466584865
+]
+2016-06-22 10:41:16 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "debug/site/profile". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('debug/site/prof...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:41:16 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49708'
+    'REDIRECT_URL' => '/crmapp/web/debug/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/debug/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584876.451
+    'REQUEST_TIME' => 1466584876
+]
+2016-06-22 10:42:15 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "debug/site/index". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('debug/site/inde...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:42:15 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49712'
+    'REDIRECT_URL' => '/crmapp/web/debug/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/debug/site/index'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584935.434
+    'REQUEST_TIME' => 1466584935
+]
+2016-06-22 10:42:25 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/debug/index". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/debug/inde...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:42:25 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49713'
+    'REDIRECT_URL' => '/crmapp/web/site/debug/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/debug/index'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584945.184
+    'REQUEST_TIME' => 1466584945
+]
+2016-06-22 10:42:38 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index/debug". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/index/debu...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:42:38 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49715'
+    'REDIRECT_URL' => '/crmapp/web/site/index/debug'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/index/debug'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584958.32
+    'REQUEST_TIME' => 1466584958
+]
+2016-06-22 10:43:06 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "debug/site/". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('debug/site/', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:43:06 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49716'
+    'REDIRECT_URL' => '/crmapp/web/debug/site/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/debug/site/'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466584986.322
+    'REQUEST_TIME' => 1466584986
+]
+2016-06-22 10:43:28 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:43:28 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:43:28 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49717'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466585008.38
+    'REQUEST_TIME' => 1466585008
+]
+2016-06-22 10:43:43 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "debug/site/". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('debug/site/', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:43:42 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49718'
+    'REDIRECT_URL' => '/crmapp/web/debug/site/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/debug/site/'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466585022.888
+    'REQUEST_TIME' => 1466585022
+]
+2016-06-22 10:48:16 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "debug/site/index". in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('debug/site/inde...', Array)
+#1 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\crmapp\web\index.php(13): yii\base\Application->run()
+#2 {main}
+2016-06-22 10:48:16 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49722'
+    'REDIRECT_URL' => '/crmapp/web/debug/site/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/debug/site/index'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466585296.372
+    'REQUEST_TIME' => 1466585296
+]
+2016-06-22 10:49:49 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:49:49 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:49:48 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_REFERER' => 'http://localhost/crmapp/web/debug/default/view?tag=576a4fb07f32f'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49725'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466585388.943
+    'REQUEST_TIME' => 1466585388
+]
+2016-06-22 10:53:12 [::1][-][-][warning][nonapplication] fourth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:43
+2016-06-22 10:53:12 [::1][-][-][error][application] fifth
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:44
+2016-06-22 10:53:11 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'q8geu1lioed820fce0srsuq5v4'
+    '_csrf' => '88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dIdc1U58NFAyLij7seoUMHx9a8-E19_o\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; MATM; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=q8geu1lioed820fce0srsuq5v4; _csrf=88eaab15b52f521a598df634b06e95ee6b2c584b833dc1bc4b4bf3a50d3efc46a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dIdc1U58NFAyLij7seoUMHx9a8-E19_o%22%3B%7D'
+    'PATH' => 'C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;D:\\xampp\\php;D:\\xampp\\php\\ext;C:\\Program Files\\QuickTime\\QTSystem\\;d:\\git;C:\\Program Files\\Java\\jdk1.7.0_02\\bin;C:\\Program Files\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C:\\Program Files\\nodejs\\;C:\\Users\\pluto\\AppData\\Local\\atom\\bin;C:\\Users\\martin\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Win32) OpenSSL/1.0.2e PHP/7.0.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49726'
+    'REDIRECT_URL' => '/crmapp/web/site/profile'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/site/profile'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466585591.93
+    'REQUEST_TIME' => 1466585591
+]

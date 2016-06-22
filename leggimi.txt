@@ -1,5 +1,52 @@
 + Implementazione interfaccia: Appendix B.
 
+crmapp-2.0.5		    22-06-2016
+- Capitolo 7 Modules
+  - Eseguito semplice esempio per far funzionare l'URI: 
+     http://localhost/crmapp/web/firstlevel/secondlevel/thirdlevel/site/docs
+  - Installazione yii2-debug ed update applicazione inserendo in composer.json   
+          "yiisoft/yii2-debug": "~2.0.0"
+  - Modificato web.php in modules e bootstrap per modulo debug.
+  - Creazione nuova suite codeception:
+	$ ./cept generate:suite api ApiTester
+  - Configurato tests/api.suite.yml.
+  - Modificato tests/api/_bootstrap.php per inizializzare applicazione yii.
+  - Eseguito $ ./cept build:
+          Errore [Codeception\Exception\ModuleRequireException]
+                 [REST] module requirements not met --
+  - Modificato api.suite.yml :
+              
+modules:
+                 enabled:
+
+		      - REST:
+
+                          depends: PhpBrowser
+            
+                          url: http://localhost/crmapp/web
+    e nell'eseguire cept build non da' errore.
+  - Creaziione Test script 
+	$ ./cept generate:test api ServicesListApi
+        Test was created in D:\xampp\htdocs\crmapp\tests\api\ServicesListApiTest.php
+  - Copiate il codice di ServicesListApiTest dal book. Sembra che se prima della 
+    funziona c'e' /** @test */ essa viene cmq testata e non e' necessario usare TestMe.
+  - cept run api : tutti errori. Creata app/api con ApiModule.php che estende module.
+    Nella cartella api/controllers creato il controller ServicesController e spostati 
+    le due azioni actionJson e actionYaml.
+  - Modificato api.suite.yml per azzerare il database per ogni test.Esito test OK!!
+  - Adesso mancano le tabelle auth! Cancellato database rieseguito:
+      $ ./yii migrate --migrationPath='@yii/rbac/migrations'
+      $ ./yii migrate
+    Esportato database con: 
+      $ ../../mysql/bin/mysqldump -u martinmac crmapp2 > tests/_data/dump.sql
+  - cept run api --> OK. Terminato Capitolo 7 Modules.
+  - Dal branch modules eseguito
+    - git add.
+    - git commit -m "crmapp-2.0.5"
+    - git checkout master
+    - git merge modules
+    - git branch -d modules
+---------------------------------------------------------------------------------- 
 crmapp-2.0.4		    09-06-2016
 - Capitolo 6 User Authorization and Access Control
  - Creata migrazione add_predefined_users.

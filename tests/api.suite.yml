@@ -1,0 +1,15 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - PhpBrowser:
+            url: http://localhost/crmapp/web
+        - Db:
+            dsn: 'mysql:host=localhost;dbname=crmapp2'
+            user: 'martinmac'
+            dump: tests/_data/dump.sql
+            populate: false
+            cleanup: true
+        - REST:
+            depends: PhpBrowser
+            url: http://localhost/crmapp/web
