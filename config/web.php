@@ -2,7 +2,7 @@
 return [
 	'id' => 'crmapp',
 	'basePath' => realpath(__DIR__ . '/../'),
-	'bootstrap' => ['debug'],
+	'bootstrap' => ['debug','log'],
 	'modules' => [
         'gii' => [
             'class' => 'yii\gii\Module',
@@ -57,6 +57,18 @@ return [
             'class' => 'yii\rbac\DbManager',
             'defaultRoles' => ['guest'],
         ],
+		'log' => [
+            'traceLevel' =>  3 ,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['trace','info','error', 'warning'],
+                ],
+            ],
+        ],
+		'assetManager' => [
+			'bundles' => (require __DIR__ . '/assets_compressed.php')
+		],
 		'db' => require(__DIR__ . '/db.php'),
-	],
+	]
 ];

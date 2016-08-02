@@ -1,5 +1,29 @@
 + Implementazione interfaccia: Appendix B.
 
+crmapp-2.0.6		    02-08-2016
+- Capitolo 8 Overall Behavior
+ - Aggiunto branch: git checkout -b allasset
+ - Modificato web.php per configurare logging:
+   - in components 
+	'log' => [
+            'traceLevel' =>  3 ,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['trace','info','error', 'warning'],
+                ],
+            ],
+        ],
+      e in bootstrap aggiunto log.
+   - Aggiunto actionProfile in SiteController. Aggiunto anche
+        use yii\log\Logger;
+        use yii\web\Response;
+   + Approfondire Meccanismo logging, profiling e caching.
+   - Minimizzazione Asset: vedi appunti.
+   - Dal branch allasset eseguito
+    - git add.
+    - git commit -m "crmapp-2.0.6"
+---------------------------------------------------------------------------------- 
 crmapp-2.0.5		    22-06-2016
 - Capitolo 7 Modules
   - Eseguito semplice esempio per far funzionare l'URI: 

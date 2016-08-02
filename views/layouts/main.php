@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-app\assets\ApplicationUiAssetBundle::register($this);
+app\assets\AllAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -15,6 +15,7 @@ app\assets\ApplicationUiAssetBundle::register($this);
 <?php $this->beginBody() ?>
 <div class="container">
     <div class="authorization-indicator">
+        <?= Html::a('profile', Yii::$app->homeUrl.'/site/profile');?>
         <?php if (Yii::$app->user->isGuest):?>
             <?= Html::tag('span', 'guest');?>
             <?= Html::a('login', Yii::$app->homeUrl.'/site/login');?>
