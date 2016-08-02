@@ -1,5 +1,37 @@
 + Implementazione interfaccia: Appendix B.
-
+crmapp-2.0.7		    xx-xx-2016
+- git checkout master
+  git merge allasset
+  git branch -d allasset
+  git checkout -b manual-extension
+- Capitolo 9: Making an Extension
+ - Aggiunta estensione Yii-malicius manualmente:
+  - In web.php aggiunto:
+     'extensions' => array_merge(
+        (require __DIR__ . '/../vendor/yiisoft/extensions.php'),
+         [
+            'malicious\app-info' => [
+                'name' => 'Application Information Dumper',
+                'version' => '1.0.0',
+                'bootstrap' => '\malicious\Bootstrap',
+                'alias' => ['@malicious' => '@app/yiisoft/yii2-malicious']
+             ]
+         ]
+      )
+   E creata cartella app/manual-extension/malicius, creando in essa 
+   AppInfoController.php e Bootstrap.php. In pratica viene aggiunta l'estensione
+   che in bootstrap setta :
+	$app->controllerMap['app-info'] = '\malicious\AppInfoController';
+   In questo modo quando l'URL e' http://localhost/crmapp/web/app-info/configuration
+   viene eseguita actionConfiguration() del controller AppInfoController  che 
+   visualizza in json dati importanti della applicazione.
+   Questo non e' un metodo corretto di aggiungere un'estensione perche' non e' possibile 
+   aggiornarla/installarla con composer.
+ + Verificare meglio l'uso di git, composer, zip per le estensioni. 
+ - Dal branch manual-extension eseguito
+   - git add.
+   - git commit -m "crmapp-2.0.7"
+---------------------------------------------------------------------------------- 
 crmapp-2.0.6		    02-08-2016
 - Capitolo 8 Overall Behavior
  - Aggiunto branch: git checkout -b allasset

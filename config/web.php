@@ -70,5 +70,16 @@ return [
 			'bundles' => (require __DIR__ . '/assets_compressed.php')
 		],
 		'db' => require(__DIR__ . '/db.php'),
-	]
+	],
+    'extensions' => array_merge(
+        (require __DIR__ . '/../vendor/yiisoft/extensions.php'),
+        [
+            'malicious\app-info' => [
+                'name' => 'Application Information Dumper',
+                'version' => '1.0.0',
+                'bootstrap' => '\malicious\Bootstrap',
+                'alias' => ['@malicious' => '@app/manual-extension/malicious']
+            ]
+        ]
+    )
 ];
