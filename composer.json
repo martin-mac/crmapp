@@ -2,7 +2,10 @@
     "require": {
         "codeception/codeception": "*",
         "fzaninotto/faker": "*",
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "*",
+        "fxp/composer-asset-plugin": "^1.2",
+		"martin-mac/hello": "*",
+		"martin-mac/yii-malicious": "*"		
     },
 	"extra": {
         "asset-installer-paths": {

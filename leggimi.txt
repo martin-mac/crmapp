@@ -1,5 +1,63 @@
 + Implementazione interfaccia: Appendix B.
-crmapp-2.0.7		    xx-xx-2016
+
+		---------------------------------------------------------------------------------- 
+		crmapp-2.1.0		    30-08-2016
+		- >git commit -m "crmapp-2.1.0"
+		  >git checkout -b audit
+		- Creato xampp/htdocs/crmapp/tests/functional/CustomerAuditTest.php:
+		  >alias cept="./vendor/bin/codecept"
+		  >cept generate:test functional CustomerAudit
+		+ tentativo ripristino crmapp da versione   
+		 
+		  
+
+
+		---------------------------------------------------------------------------------- 
+		- Terminato capitolo 9	    30-08-2016
+		- Eliminata la cartella app/manual-extension e creata xampp/htdocs/extensions.
+		  Qui create due estensioni: hello e yii-malicious. Entrambe collegate a github e
+		  packagist con aggiornamento automatico di versione: infatti dopo un commit e'
+		  possibile inserire e trasferire un tag che e' la versione di rif. di composer:
+		  >git commit ....
+		  >git tag 2.0.0
+		  >git push -u origin master
+		  >git push --tags
+		+ Durante la creazione delle estensioni, inserito in composer.json la stabilita
+		  minima in dev e adesso non riesco a rimetterla in stable.
+		- Eliminato il branch manual-extension.
+
+
+---------------------------------------------------------------------------------- 
+crmapp-2.0.8		    xx-xx-2016
+- Eseguito composer update con aggiornamento di phpunit/phpunit-mock-objects 3.2.6
++ Fatta copia di crmapp-master per sicurezza.
+  Ci sono delle modifiche in runtime e in web/assets! Scopo di questa versione e'
+  apportare le modifiche fatte attualmente in crmapp con minimum-stability=dev con
+  la stabilita normale: dev. Vedi parte identata in testa.
+- Aggiunto in gitignore :
+    /runtime
+    /web/assets
+- Terminato capitolo 9.
+- Eliminato in web.php l'elemento extensions.
+- Eliminata la cartella app/manual-extension e creata xampp/htdocs/extensions.
+  Qui create due estensioni: hello e yii-malicious. Entrambe collegate a github e
+  packagist con aggiornamento automatico di versione: infatti dopo un commit e'
+  possibile inserire e trasferire un tag che e' la versione di rif. di composer:
+  >git commit ....
+  >git tag 2.0.0
+  >git push -u origin master
+  >git push --tags
+- Per installare le due estensioni con composer, inserito nel manifest in require:
+   "martin-mac/hello": "*",
+   "martin-mac/yii-malicious": "*"
+  Eseguito composer update e installati i due pacchetti con versione 2.0.0.
+- Per testare il primo pacchetto inserito in themes/snowy/views/site/homepage.php
+	<h1><?= HelloWorld\SayHello::world();  ?></h1>
+  mentre per il secondo basta andare all'url:
+	http://localhost/crmapp/web/app-info/configuration
+
+---------------------------------------------------------------------------------- 
+crmapp-2.0.7		    02-08-2016
 - git checkout master
   git merge allasset
   git branch -d allasset

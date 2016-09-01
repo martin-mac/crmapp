@@ -1,6 +1,6 @@
 [XDebug]
 zend_extension ="php_xdebug-2.4.0rc4-7.0-vc14.dll"
-;zend_extension ="php_xdebug-2.4.0rc4-7.0-vc14-x86_64.dll"
+;zend_extension ="php_xdebug-2.4.1-5.6-vc11.dll"
 xdebug.remote_enable = 1
 ;xdebug.remote_autostart=true
 xdebug.profiler_enable = 0

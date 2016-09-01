@@ -3689,3 +3689,737 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1470174227.005
     'REQUEST_TIME' => 1470174227
 ]
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 11:33:06 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 11:33:06 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\controllers\SiteController::actionIndex()
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\themes\snowy\views\site\homepage.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 11:33:06 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\views\layouts\main.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 11:33:05 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '50060'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471858385.931
+    'REQUEST_TIME' => 1471858385
+]
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 11:34:14 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 11:34:14 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'app-info/configuration'
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: app-info/configuration
+2016-08-22 11:34:14 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: malicious\AppInfoController::actionConfiguration()
+2016-08-22 11:34:14 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '1863962e2c10abe2250bdf4048b30ed3dbbc22ddd03d67d62bdb59b05108747aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8V9m5xSw1gH-rV8Ngs6tlptwJ7Yp06py\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=1863962e2c10abe2250bdf4048b30ed3dbbc22ddd03d67d62bdb59b05108747aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228V9m5xSw1gH-rV8Ngs6tlptwJ7Yp06py%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '50066'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/app-info/configuration'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/app-info/configuration'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471858454.15
+    'REQUEST_TIME' => 1471858454
+]
+2016-08-22 12:45:03 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 12:45:03 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 12:45:03 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 12:45:03 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 12:44:51 [::1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_csrf' => '1863962e2c10abe2250bdf4048b30ed3dbbc22ddd03d67d62bdb59b05108747aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8V9m5xSw1gH-rV8Ngs6tlptwJ7Yp06py\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=1863962e2c10abe2250bdf4048b30ed3dbbc22ddd03d67d62bdb59b05108747aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228V9m5xSw1gH-rV8Ngs6tlptwJ7Yp06py%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '50638'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/crmapp/web/index.php?XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471862668.954
+    'REQUEST_TIME' => 1471862668
+]
+2016-08-22 17:22:39 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:22:39 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:22:39 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:22:39 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:22:39 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:22:40 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'gii'
+2016-08-22 17:22:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-08-22 17:22:40 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: gii/default/index
+2016-08-22 17:22:40 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\gii\controllers\DefaultController::actionIndex()
+2016-08-22 17:22:40 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\default\index.php
+2016-08-22 17:22:40 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\layouts\main.php
+2016-08-22 17:22:39 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51513'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/gii'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879359.938
+    'REQUEST_TIME' => 1471879359
+]
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:23:13 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:23:13 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'gii'
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: gii/default/index
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\gii\controllers\DefaultController::actionIndex()
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\default\index.php
+2016-08-22 17:23:13 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\layouts\main.php
+2016-08-22 17:23:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51525'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/gii'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879393.191
+    'REQUEST_TIME' => 1471879393
+]
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:23:40 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:23:40 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\controllers\SiteController::actionIndex()
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\themes\snowy\views\site\homepage.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:23:40 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\views\layouts\main.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:23:40 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51527'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/index.php'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879420.538
+    'REQUEST_TIME' => 1471879420
+]
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:23:53 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:23:53 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'gii'
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: gii/default/index
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\gii\controllers\DefaultController::actionIndex()
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\default\index.php
+2016-08-22 17:23:53 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\layouts\main.php
+2016-08-22 17:23:53 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51529'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/gii'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879433.181
+    'REQUEST_TIME' => 1471879433
+]
+2016-08-22 17:24:16 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:24:16 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:24:16 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:24:16 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:24:43 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:24:43 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-08-22 17:24:43 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-08-22 17:24:43 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\controllers\SiteController::actionIndex()
+2016-08-22 17:24:43 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\themes\snowy\views\site\homepage.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:24:43 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\views\layouts\main.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:24:07 [::1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51530'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/crmapp/web/index.php?XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879417.925
+    'REQUEST_TIME' => 1471879417
+]
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:25:08 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:25:08 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\controllers\SiteController::actionIndex()
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\themes\snowy\views\site\homepage.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:25:08 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\views\layouts\main.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-08-22 17:25:04 [::1][-][-][info][application] $_GET = [
+    'XDEBUG_SESSION_START' => 'netbeans-xdebug'
+]
+
+$_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51539'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'XDEBUG_SESSION_START=netbeans-xdebug'
+    'REQUEST_URI' => '/crmapp/web/index.php?XDEBUG_SESSION_START=netbeans-xdebug'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879500.084
+    'REQUEST_TIME' => 1471879500
+]
+2016-08-22 17:26:40 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-08-22 17:26:53 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-08-22 17:26:57 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-08-22 17:27:17 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-08-22 17:28:32 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-08-22 17:28:37 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'gii'
+2016-08-22 17:30:44 [::1][-][-][trace][yii\base\Module::getModule] Loading module: gii
+2016-08-22 17:35:17 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: gii/default/index
+2016-08-22 17:35:17 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: yii\gii\controllers\DefaultController::actionIndex()
+2016-08-22 17:35:17 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\default\index.php
+2016-08-22 17:35:17 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\vendor\yiisoft\yii2-gii\views\layouts\main.php
+2016-08-22 17:25:32 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"d9r9GJiY8sHqVbu2se66zvdwdCF05OKO\";}'
+    'XDEBUG_SESSION' => 'netbeans-xdebug'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=3e11a73996c128ec018f2bac1ba520570cfc23475b985b3525fe15d30297b688a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22d9r9GJiY8sHqVbu2se66zvdwdCF05OKO%22%3B%7D; XDEBUG_SESSION=netbeans-xdebug'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '51543'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/gii'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/gii'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1471879522.583
+    'REQUEST_TIME' => 1471879522
+]
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-09-01 10:27:44 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-09-01 10:27:44 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: app\controllers\SiteController::actionIndex()
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\themes\snowy\views\site\homepage.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-09-01 10:27:44 [::1][-][-][trace][yii\base\View::renderFile] Rendering view file: D:\xampp\htdocs\crmapp\views\layouts\main.php
+    in D:\xampp\htdocs\crmapp\controllers\SiteController.php:13
+2016-09-01 10:27:44 [::1][-][-][info][application] $_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49739'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472718464.189
+    'REQUEST_TIME' => 1472718464
+]
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with malicious\Bootstrap::bootstrap()
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\Module::getModule] Loading module: debug
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\debug\Module::bootstrap()
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2016-09-01 10:27:57 [::1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2016-09-01 10:27:57 [::1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'app-info/configuration'
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\Controller::runAction] Route to run: app-info/configuration
+2016-09-01 10:27:57 [::1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: malicious\AppInfoController::actionConfiguration()
+2016-09-01 10:27:57 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '8b016639279ac3eb6d2eeae8efb1fe8426b19c58c51a9f251b23781569c51f21a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4UWW3on2H4AQrhXpjv6YQ8Zv0KGaOuH7\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'it-IT'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_csrf=8b016639279ac3eb6d2eeae8efb1fe8426b19c58c51a9f251b23781569c51f21a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224UWW3on2H4AQrhXpjv6YQ8Zv0KGaOuH7%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\PC Connectivity Solution\\;C:\\oraclexe\\app\\oracle\\product\\10.2.0\\server\\bin;C:\\Program Files\\CodeGear\\RAD Studio\\5.0\\bin;C:\\Users\\Public\\Documents\\RAD Studio\\5.0\\Bpl;C:\\Program Files\\Borland\\Delphi7\\Bin;C:\\Program Files\\Borland\\Delphi7\\Projects\\Bpl\\;C:\\PROGRA~1\\Borland\\CBUILD~1\\Projects\\Bpl;C:\\PROGRA~1\\Borland\\CBUILD~1\\Bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Program Files\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files\\Microsoft Network Monitor 3\\;C:\\Program Files\\Common Files\\GTK\\2.0\\bin;c:\\masm32\\bin;C:\\Program Files\\Java\\jdk1.7.0_25\\bin;d:\\xampp\\php;d:\\xampp\\php\\PEAR;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/crmapp/web/index.php'
+    'REMOTE_PORT' => '49741'
+    'REDIRECT_URL' => 'http://localhost/crmapp/web/app-info/configuration'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/crmapp/web/app-info/configuration'
+    'SCRIPT_NAME' => '/crmapp/web/index.php'
+    'PHP_SELF' => '/crmapp/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1472718477.267
+    'REQUEST_TIME' => 1472718477
+]
