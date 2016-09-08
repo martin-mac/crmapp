@@ -21,6 +21,15 @@ class CustomerRecord extends ActiveRecord
             ['notes', 'safe']
         ];
     }
+	
+    public function behaviors()
+    {
+        return [
+            'timestamp' => \yii\behaviors\TimestampBehavior::className(),
+            'blame' => \yii\behaviors\BlameableBehavior::className()
+        ];
+    }
+	
     public function getPhones()
     {
         return $this->hasMany(PhoneRecord::className(), ['customer_id' => 'id']);
