@@ -30,5 +30,5 @@ phpunit.phar
 /phpunit.xml
 
 # mik yii2 files non necessari?
-/runtime
-/web/assets
+runtime/
+leggimi.txt
