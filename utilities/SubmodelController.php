@@ -51,7 +51,7 @@ class SubmodelController extends Controller
     public function actionCreate()
     {
          /** @var ActiveRecord $model */
-		 $model = new recordClass;
+		 $model = new $this->recordClass;
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) 
             return $this->redirect(['view', 'id' => $model->id]);

@@ -65,13 +65,10 @@ class CustomerRecordsController extends Controller
     {
         $model = new CustomerRecord();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
+        #return $this->render('create', ['model' => $model,]);
+		return $this->render('create', compact('model'));
     }
 
     /**
@@ -84,13 +81,10 @@ class CustomerRecordsController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
             return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
+        #return $this->render('update', ['model' => $model,]);
+        return $this->render('update', compact('model'));
     }
 
     /**

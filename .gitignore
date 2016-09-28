@@ -31,4 +31,4 @@ phpunit.phar
 
 # mik yii2 files non necessari?
 runtime/
-leggimi.txt
+#changelog.txt

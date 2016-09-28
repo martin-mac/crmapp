@@ -1,5 +1,7 @@
 <?php
-require_once('../../class.utility.php');
+# class.utility is my debug script
+//require_once('../../class.utility.php');
+
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 

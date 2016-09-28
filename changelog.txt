@@ -1,0 +1,496 @@
++ Implementazione interfaccia: Appendix B.
+---------------------------------------------------------------------------------- 
+crmapp-2.1.2		    xx-xx-2016
+- Implementazione GridView:
+
+---------------------------------------------------------------------------------- 
+crmapp-2.1.1		    28-09-2016
+- Messo in rem require_once class.utility.php in index.php.
+- rename leggimi.txt in changelog.txt
+- Ricreato CRUD per tabella 'customer' per includere behavior capitolo 10:
+  model class        : app\models\customer\CustomerRecord
+  Search model class : app\models\customer\CustomerRecordSearch
+  controller class   : app\controllers\CustomerRecordsController
+  view path          : @app/views/customer-records
+  Eseguito overwrite.
+- Migliorata leggibilita azioni Create e Update di CustomerRecordsController
+- Test inserimento record nelle varie tabelle: ok.
+- Chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.1.1"
+  >git push origin master
+---------------------------------------------------------------------------------- 
+crmapp-2.1.0		    20-09-2016
+- Su windows 7 starter i test acceptance falliscono: errore porta 7055
+- Trasferito da windows7 crmapp su windows 10 professional : 
+  >./yii migrate ( per campi created_at, ecc. )
+  >cept run functional: Ok
+  >cept run acceptance QueryCustomerByPhoneNumberCept: OK   
+  >composer update : Ok 
+  >in gitignore aggiunto leggimi.txt
+  >git remote add origin http://github.com/martin-mac/crmapp
+  >git add .
+  >git commit -m "crmapp-2.1.0"
+  >git checkout master
+  >git merge audit
+  >git branch -d audit
+  >git push -f origin master
+---------------------------------------------------------------------------------- 
+crmapp-2.0.9		    08-09-2016
+- >git checkout -b audit
+- Creato xampp/htdocs/crmapp/tests/functional/CustomerAuditTest.php:
+  >alias cept="./vendor/bin/codecept"
+  >cept generate:test functional CustomerAudit   
+- Modificato il file come da codice del libro. Ma mi accorgo che il database 
+  crmapp2 non c'e'!!! Creato database ed eseguito:
+  ./yii migrate --migrationPath='@yii/rbac/migrations'
+  ./yii migrate
+  Scaricato selenium-server-standalone-2.53.1.jar ed eseguito con java -jar.
+  Codeception da' un errore di conflitto tra PhpBrowser e WebDriver nell'eseguire
+  gli acceptance test: modificato acceptance.suite.yml eliminando il blocco
+  	- PhpBrowser:
+            url: http://localhost/crmapp/web
+- Prova old test: 
+  > cept run acceptance QueryCustomerByPhoneNumberCept
+  Esito ok!!!
+- > ./yii migrate/create add_audit_fields_to_customer
+  Creata migrazione per aggiungere created_at, created_by, updated_at e updated_by
+  per la tabella customer tutti integer.(vedi codice book).
+  > ./yii migrate
+ ---------------------------------------------------------------------------------- 
+crmapp-2.0.8		    01-09-2016
+- Eseguito composer update con aggiornamento di phpunit/phpunit-mock-objects 3.2.6
++ Fatta copia di crmapp-master per sicurezza.
+  Ci sono delle modifiche in runtime e in web/assets! Scopo di questa versione e'
+  apportare le modifiche fatte attualmente in crmapp con minimum-stability=dev con
+  la stabilita normale: dev.
+- Aggiunto in gitignore :
+    /runtime
+    /web/assets
+- Terminato capitolo 9.
+- Eliminato in web.php l'elemento extensions.
+- Eliminata la cartella app/manual-extension e creata xampp/htdocs/extensions.
+  Qui create due estensioni: hello e yii-malicious. Entrambe collegate a github e
+  packagist con aggiornamento automatico di versione: infatti dopo un commit e'
+  possibile inserire e trasferire un tag che e' la versione di rif. di composer:
+  >git commit ....
+  >git tag 2.0.0
+  >git push -u origin master
+  >git push --tags
+- Per installare le due estensioni con composer, inserito nel manifest in require:
+   "martin-mac/hello": "*",
+   "martin-mac/yii-malicious": "*"
+  Eseguito composer update e installati i due pacchetti con versione 2.0.0.
+- Per testare il primo pacchetto inserito in themes/snowy/views/site/homepage.php
+	<h1><?= HelloWorld\SayHello::world();  ?></h1>
+  mentre per il secondo basta andare all'url:
+	http://localhost/crmapp/web/app-info/configuration
+- Eliminato il branch manual-extension:
+  >git add .
+  >git rm manual-extension/malicious/AppInfoController.php
+  >git rm manual-extension/malicious/Bootstrap.php
+  >git commit -m "crmapp-2.0.8"
+  >git checkout master
+  >git merge manual-extension
+  >git branch -d manual-extension
+---------------------------------------------------------------------------------- 
+crmapp-2.0.7		    02-08-2016
+- git checkout master
+  git merge allasset
+  git branch -d allasset
+  git checkout -b manual-extension
+- Capitolo 9: Making an Extension
+ - Aggiunta estensione Yii-malicius manualmente:
+  - In web.php aggiunto:
+     'extensions' => array_merge(
+        (require __DIR__ . '/../vendor/yiisoft/extensions.php'),
+         [
+            'malicious\app-info' => [
+                'name' => 'Application Information Dumper',
+                'version' => '1.0.0',
+                'bootstrap' => '\malicious\Bootstrap',
+                'alias' => ['@malicious' => '@app/yiisoft/yii2-malicious']
+             ]
+         ]
+      )
+   E creata cartella app/manual-extension/malicius, creando in essa 
+   AppInfoController.php e Bootstrap.php. In pratica viene aggiunta l'estensione
+   che in bootstrap setta :
+	$app->controllerMap['app-info'] = '\malicious\AppInfoController';
+   In questo modo quando l'URL e' http://localhost/crmapp/web/app-info/configuration
+   viene eseguita actionConfiguration() del controller AppInfoController  che 
+   visualizza in json dati importanti della applicazione.
+   Questo non e' un metodo corretto di aggiungere un'estensione perche' non e' possibile 
+   aggiornarla/installarla con composer.
+ + Verificare meglio l'uso di git, composer, zip per le estensioni. 
+ - Dal branch manual-extension eseguito
+   - git add.
+   - git commit -m "crmapp-2.0.7"
+---------------------------------------------------------------------------------- 
+crmapp-2.0.6		    02-08-2016
+- Capitolo 8 Overall Behavior
+ - Aggiunto branch: git checkout -b allasset
+ - Modificato web.php per configurare logging:
+   - in components 
+	'log' => [
+            'traceLevel' =>  3 ,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['trace','info','error', 'warning'],
+                ],
+            ],
+        ],
+      e in bootstrap aggiunto log.
+   - Aggiunto actionProfile in SiteController. Aggiunto anche
+        use yii\log\Logger;
+        use yii\web\Response;
+   + Approfondire Meccanismo logging, profiling e caching.
+   - Minimizzazione Asset: vedi appunti.
+   - Dal branch allasset eseguito
+    - git add.
+    - git commit -m "crmapp-2.0.6"
+---------------------------------------------------------------------------------- 
+crmapp-2.0.5		    22-06-2016
+- Capitolo 7 Modules
+  - Eseguito semplice esempio per far funzionare l'URI: 
+     http://localhost/crmapp/web/firstlevel/secondlevel/thirdlevel/site/docs
+  - Installazione yii2-debug ed update applicazione inserendo in composer.json   
+          "yiisoft/yii2-debug": "~2.0.0"
+  - Modificato web.php in modules e bootstrap per modulo debug.
+  - Creazione nuova suite codeception:
+	$ ./cept generate:suite api ApiTester
+  - Configurato tests/api.suite.yml.
+  - Modificato tests/api/_bootstrap.php per inizializzare applicazione yii.
+  - Eseguito $ ./cept build:
+          Errore [Codeception\Exception\ModuleRequireException]
+                 [REST] module requirements not met --
+  - Modificato api.suite.yml :
+              
+modules:
+                 enabled:
+
+		      - REST:
+
+                          depends: PhpBrowser
+            
+                          url: http://localhost/crmapp/web
+    e nell'eseguire cept build non da' errore.
+  - Creaziione Test script 
+	$ ./cept generate:test api ServicesListApi
+        Test was created in D:\xampp\htdocs\crmapp\tests\api\ServicesListApiTest.php
+  - Copiate il codice di ServicesListApiTest dal book. Sembra che se prima della 
+    funziona c'e' /** @test */ essa viene cmq testata e non e' necessario usare TestMe.
+  - cept run api : tutti errori. Creata app/api con ApiModule.php che estende module.
+    Nella cartella api/controllers creato il controller ServicesController e spostati 
+    le due azioni actionJson e actionYaml.
+  - Modificato api.suite.yml per azzerare il database per ogni test.Esito test OK!!
+  - Adesso mancano le tabelle auth! Cancellato database rieseguito:
+      $ ./yii migrate --migrationPath='@yii/rbac/migrations'
+      $ ./yii migrate
+    Esportato database con: 
+      $ ../../mysql/bin/mysqldump -u martinmac crmapp2 > tests/_data/dump.sql
+  - cept run api --> OK. Terminato Capitolo 7 Modules.
+  - Dal branch modules eseguito
+    - git add.
+    - git commit -m "crmapp-2.0.5"
+    - git checkout master
+    - git merge modules
+    - git branch -d modules
+---------------------------------------------------------------------------------- 
+crmapp-2.0.4		    09-06-2016
+- Capitolo 6 User Authorization and Access Control
+ - Creata migrazione add_predefined_users.
+ - Riapplicate tutte le migrazioni.
+ - Inizializzato lo schema per \yii\rbac\DbManager:
+     ./yii migrate --migrationPath='@yii/rbac/migrations' 
+   dopo aver configurato in console.php e in web.php:
+	'authManager'  => [
+
+		'class'  => 'yii\rbac\DbManager',
+ 
+                'defaultRoles' => ['guest'],
+        ],
+ - Creato cept funzionale RoleHierarchy.
+ - Creata migrazione create_roles_for_predefined_users.
+ - Eseguito il test RoleHierarchy che esegue solo la funzione DefaultRoleIsGuest
+   e quindi passa. 
+   + Verificare come utilizzare PredefinedUsersHasProperRoles in RoleHierarchy
+ - Copiati i test acceptance: AdminAccessRights, ManagerAccessRights, UserAccessRights
+   e GuestAccessRights e stepobject CRMGuest.
+ - Implementato accessController per i controller ServicesController, UsersController
+    e CustomerController. 
+ - Inseriti gli utenti nei step object:
+	user    : JoeUser / 7 wonder @ American soil
+	admin   : RobAdmin / Imitate #14th symptom of apathy
+	operator: AnnieManager / Shiny 3 things hmm, vulnerable
+ - Aggiustati tutti gli acceptance test: Esito OK (14 tests, 150 assertions)
+ - Terminato capitolo 6.
+----------------------------------------------------------------------------------  
+crmapp-2.0.3		    07-06-2016
+- Capitolo 5 User Autenticazione
+  - ./yii migrate/create init_user_table
+  - ./yii migrate
+  - Generato modello app\models\user\UserRecord
+  - Generato CRUD utilizzando questi percorsi:
+      modello    : app\models\user\UserRecord
+	  search     : app\models\user\UserSearchModel
+	  controller : app\controllers\UsersController
+	  view       : @app/views/users
+  - Implementato Test per tabella user. Si potevano duplicare quelli per la tabella
+    services e sostituire i riferimenti a service in user. Preferito copiarli da
+    crmapp-book: CRMUsersManagementSteps modificando il namespace in Step\Acceptance
+	 e RegisterNewUserCept, DeleteUserCept, EditUserCept modificando la prima riga 
+    $I = new Step\Acceptance\CRMUsersManagementSteps($scenario)
+  - Scaricata ultima versione selenium-server-standalone-2.53.0 e aggiunto in  
+    acceptance.suite.yml 
+        - WebDriver:
+            url: 'http://localhost/crmapp/web'
+            browser: firefox
+    Nell'eseguire i test da errore fatale:
+    Cannot redeclare _generated\AcceptanceTesterActions::switchToIFrame() 
+	in D:\xampp\htdocs\crmapp\tests\_support\_generated\AcceptanceTesterActions.php 
+	on line 2701.
+	Rinomino tale funzione in xswitchToIFrame() e funzionano tutti i test, compreso
+	i Delete visto che adesso wait(1) funziona.
+  - Resta un errore nei test RegisterNew quando i record superano i 20. Dovrebbe 
+    spostarsi sull'ultima pagina dopo l'aggiunta di un record:
+    - Modificato CRMUsersManagementSteps->seeUserInList aggiungendo
+			$I->click(['css' => 'li[class=next] a']);
+  - Modificato allo stesso modo CRMServicesManagementSteps->seeServiceInList.
+  - Rimesso in rem le ultime due modifiche, perche' e' necessario valutare il caso 
+    in cui i record sono inferiori di 22 e non c'e' il tasto >> e inoltre se sono 
+	piu di tre pagine cmq non funziona. Infine il test sul delete non va!
+  - Ogni volta che si modifica il file tests/_support/Helper/Acceptance.php (come per
+    aggiungere la funzione seePageHasElement) viene ricreato AcceptanceTesterActions
+	con l'errore su switchToIFrame()!!
+  - Modificata nella vista index.php di users la paginazione per first e last, 
+    e modificato il test in modo che da click(['css' => 'li[class=next] a']) che 
+	puntava al tasto >> al click(['link' => 'last'])che punta al tasto last.
+  - Modificata paginazione per users. In UserController->actionIndex() inserito
+		        $dataProvider->pagination = ['pageSize'=>6];
+  - Inserito ciclo in RegisterNewUserCept per inserire 20 utenti a test :
+    - azzerata tabella users e eseguito solo RegisterNewUserCept: OK.
+  - Messo in rem il ciclo in RegisterNewUserCept. Inserito in 
+    CRMServicesManagementSteps->seeUserInList
+		if ($I->seePageHasElement(['link' => 'last'])) {
+			$I->click(['link' => 'last']);
+		}
+    e modificato nella vista index.php di services la paginazione x first e last e 
+	in ServicesController->actionIndex pagination di dataProvider.
+  - Eseguito cept run: da errore sui test EditServiceCept e EditUserCept.
+    La funzione seeEditButtonBesideService di CRMServicesManagementSteps
+	prima di eseguire $I->seeElement($xpath) deve posizionarsi sull'eventuale
+	ultima pagina: 		
+	    if ($I->seePageHasElement(['link' => 'last'])) {
+			$I->click(['link' => 'last']);
+		}
+	Stessa cosa in CRMUsersManagementSteps->seeEditButtonBesideService.
+  - Eseguito cept run: da errore sul test QueryCustomByPhoneNumberCept (non sempre!)
+    cmq tolta la duplicazione $I->amInQueryCustomerUi e $I->amInAddCustomerUi
+    (vedi crmapp-1.1.2)	e inserito un $I->wait(1) in submitCustomerDataForm
+	di CRMOperatorSteps visto che sembra un problema di velocita/risorse.
+  - Eseguito cept run: Da errore nel caso i due record aggiunti sono uno in una
+    pagina e l'altro nella successiva. Messo in rem $I->seeUserInList($first_user)
+    e $I->seeServiceInList($first_service) nei rispettivi RegisterNewxxxxCept.	
+  - Eseguito cept run: OK - Rifatto con db vuoto: OK-.
+  - Creato dump database per test funzionale sulla password. Configurato file
+    functional.suite.yml e dopo cept build creato test:
+       cept generate:test functional PasswordHashing
+    Copiato il test dal book con i seguenti adattamenti:
+    - E' testMe che chiama il test con $this->PasswordIsHashedWhenSavingUser() 
+    - Dava un errore di dns, risolto configurando codeception.yml.
+  - Adattato beforeSave e aggiunta una migrazione per il campo auth_key  
+  - Eseguito test: Esito ok.
+  - Implementato actionLogin, la vista e il modello LoginForm.Prova di 
+    funzionamento: OK.
+  - Implemetato actionLogout.
+  - Aggiustato il test LoginAndLogoutCept: Ok.
+  - Terminato capitolo 5.
+  - Dal branch userauth eseguire
+    - git add.
+    - git commit -m "crmapp-2.0.3"
+    - git checkout master
+    - git merge userauth
+    - git branch -d userauth
+----------------------------------------------------------------------------------   
+crmapp-2.0.2		    01-06-2016
+- Customer Response Formatter
+  - Nel namespace app\utilities creata classe YamlResponseFormatter che 
+    implementa ResponseFormatterInterface. Creata sua funzione format che usa 
+	Symfony\Component\Yaml\Yaml:Dump. Attivato in web.php nella sezione components
+				'response' => [
+					'formatters' => [
+						'yaml' => [
+							'class' => 'app\utilities\YamlResponseFormatter'
+						]
+					[
+				]
+  - Nel controller ServiceController creata actionYaml che mette in $data l'array
+    con tutti i record della tabella services e dopo settato response->format='yaml'
+	associa a response->data=$data.
+- Implementato AssetBundler ApplicationUiAssetBundle che registra nella vista 
+				  assets/ui/css/main.css
+				  assets/ui/js/main.js
+- Implementato un theme alla vista homepage:
+  - Creato themes/snowy/views/site/homepage.php
+  - In assets creato SnowAssetsBundle che registra assets/snow/snow.css
+  - In web.php nella sezione components
+				'view' => [
+					'theme' => [
+						'class' => yii\base\Theme::className(),
+						'basePath' => '@app/themes/snowy',
+					]
+				]						
+----------------------------------------------------------------------------------   
+crmapp-2.0.1		    30-05-2016
+- Aggiunto branch: git checkout -b markrenderer
+- alias cept="./vendor/bin/codecept"
+  cept generate:cept acceptance Documentation
+	- Crea uno script che inizia con $I=new AcceptanceTester($scenario), modificata
+		in $I=new Step\Acceptance\CRMUserSteps($scenario) perche' e' in quest'ultima 
+		classe che viene implementata la funzione seeLargeBodyOfText() che chiamate
+		seeContentIsLong (un wrap di assertGreaterThen) quindi implementato nella 
+        classe Helper\Acceptance ( tests/_support/Helper/Acceptance.php).
+    - Implementata azione e vista.
+    - cept build
+    - cept run 	tests/acceptance/DocumentationCept.php - Da Ok se momentaneamente 
+	  mettiamo in docindex.md un <h1> iniziale e poi un <p> prima del paragrafo.
+	- Rimettiamo file docindex con codifica Markdown e creiamo in utilities oggetto
+	  MarkdownRenederer che estende ViewRenderer e modificato file config/web.php 
+	  nella sezione componenets :
+        'view' => [
+			'renderers' => [
+				'md' => [
+				'class' => 'app\utilities\MarkdownRenderer'
+				]
+			]
+		],	  
+ - Dal branch markrenderer eseguire
+   - git add.
+   - git commit -m "implementato markdown renderer"
+   - git checkout master
+   - git merge markrenderer
+   - git branch -d markrenderer
+   N.B: Se vogliamo annullare anche fisicamente le modifiche e tornare a crmapp-2.0.0
+        dopo il commit, eseguire : 
+        - git reset --hard HEAD^   
+----------------------------------------------------------------------------------
+crmapp-2.0.0		    29-05-2016
+- Composer update: ok
+- Modificato il migrate della tabella phone: eliminato errore UNIQUE su customer_id.
+- Unificati i controller in utilities/SubmodelController.
+- Terminato capitolo 3 ed eseguito commit di git, cercando di mantenere la versione
+  allinieata a questo leggimi.txt.
+
+			    20-05-2016
+- Dopo la migrazione per service e la moddifica di main.php, copiati il step object    
+  CRMServicesManagementSteps in D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance.
+  Modificato namespace e copiati i seguenti acceptance tester:
+   -  RegisterNewServiceCept
+   -  EditServiceCept
+   +  DeleteServiceCept (da errore su seeInPopup - vedi note vers. 1.1.2) 
+
+			    16-05-2016
+- Passaggio a php 7
+  - La nuova versione di codeception quando crea un stepobject lo crea in:
+     D:\xampp\htdocs\crmapp\tests\_support\Step\Acceptance
+    Affinche esso funziona e' necessario inizializzarlo in QueryCustomByPhoneNumberCept:          
+	   $I = new Step\Acceptance\CRMOperatorSteps($scenario);
+----------------------------------------------------------------------------------	   
+crmapp-1.1.0
+- Aggiustata test codeception:
+ - Modificato la funzione CRMUserSteps->fillInPhoneFieldWithDataFrom cambiano la riga
+	'PhoneRecord[number]', $customer_data['PhoneRecord[number]']
+   in
+	'phone_number', $customer_data['PhoneRecord[number]']
+- creata tabella services tramite ./yii migrate
+- Installato yiisoft-yii2-gii che installa anche 
+	bower-asset/typeahead.js
+	phpspec/php-diff
+	yiisoft/yii2-bootstrap
+----------------------------------------------------------------------------------
+crmapp-1.1.1
+- Aggiuistato i test acceptance (tranne DeleteServiceCept):
+ - Copiati i file CRMServicesManagementSteps, DeleteServiceCept, EditServiceCept e 
+   RegisterNewServiceCept.
+ - Modificato CRMServicesManagementSteps:
+   1.-  class CRMServicesManagementSteps extends CRMGuestSteps ---->  
+	class CRMServicesManagementSteps extends \AcceptanceTester
+   2.-  $I->seeCurrentUrlEquals('/services/create');   ---->
+        $I->seeCurrentUrlMatches('/services\/create/');
+   3,. Messi in rem le due chiamate a $I->wait(1);
+----------------------------------------------------------------------------------
+crmapp-1.1.2
+- Prova webdriver test
+ -Aggiustati i 5 test. Ma e' necessario usare il server selenium. Con phantomjs 
+  funzionano solo 4 test tranne DeleteServiceCept, perche' non funziona seeInPopup!
+ -Inoltre stranamente il test QueryCustomerByPhoneNumberCept, dava errore. Per 
+  risolvere duplicate le righe $I->amInAddCustomerUi() e $I->amInQueryCustomerUi()!!!
+----------------------------------------------------------------------------------
+crmapp-1.0.0                10-01-2015
+- risolto problema published per vendor/bower/jquery/dist:
+  - aggiornato globalmente package  fxp/composer-asset-plugin-1.0.0-beta4.
+  - aggiornati i package di crmapp con composer update.(l'errore c'e' ancora).
+  - aggiunto a composer.json :
+    	"extra": {
+        
+		"asset-installer-paths": {
+            
+			"npm-asset-library": "vendor/npm",
+            
+			"bower-asset-library": "vendor/bower"
+        
+		}
+    
+	}
+  - Siccome composer update da un errore di aggiornamento del package 
+    bower-asset/jquery2.1.*@stable eseguito comando
+    composer require --pref-dist bower-asset/bootstrap "*"
+    Eseguito composer update con esito OK. 
+- risolto problema che l'activeform non salva niente nel database:
+  - modificato la rule per la data in CustomerRecord :
+      ... 
+      ['birth_date', 'date', 'format' => 'php:Y-m-d'],
+      ...
+- Attenzione al redirect ad esempio $this->redirect('/customer') punta a 
+  localhost/customer. E' necessario scrivere $this->redirect(['/customers']).
+- Il metodo CustomerController->actionAdd puo' essere scritto:
+    public function actionAdd()
+	
+    {
+      if (($customer->load(Yii::$app->request->post()) && 
+           
+           $phone->load(Yii::$app->request->post())) && 
+           $this->store($customer,$phone)) {
+           
+     
+            return $this->redirect(['/customers']);
+        
+      } else {
+				
+                 return $this->render('add', compact('customer', 'phone'));
+        
+      }
+    }
+  dove il metodo store e' cosi' definito:
+    private function store(CustomerRecord $customer_record, PhoneRecord $phone_record)
+   
+    {
+   	
+	if ($customer_record->save())
+ {
+			
+		$phone_record->customer_id = $customer_record->id;
+   
+		if ($phone_record->save())
+				 
+			return true;	
+   	
+        }
+   	
+	return false;
+		   
+   
+    }    
+----------------------------------------------------------------------------------
