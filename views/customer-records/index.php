@@ -23,16 +23,59 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
+            #Specify columns as string:
+			#	attribute:type:label
+			#Esempio:
+            #'name:text:cliente',
             'name',
-            'birth_date',
-            'notes:ntext',
-            'created_at',
+			[
+				'attribute' => 'birth_date',
+				'format' => ['date', 'jS-M-Y'],
+            ],            
+			//'id',
+            //'notes:ntext',
+            //'created_at',
             // 'created_by',
             // 'updated_at',
             // 'updated_by',
+            [
+                'attribute' => 'country',
+                'label' => 'Addresses',
+                'format' => 'paragraphs',
+                'value' => function ($model) {
+                        $result = '';
+                        foreach ($model->addresses as $address) {
+                            $result .= $address->fullAddress . "\n\n";
+                        }
+                        return $result;
+                    }
+            ],
+            [
+                'attribute' => 'email',
+                'label' => 'Emails',
+                'format' => 'paragraphs',
+                'value' => function ($model) {
+                        $result = '';
+                        foreach ($model->emails as $email) {
+                            $result .= $email->address . "\n\n";
+                        }
+                        return $result;
+                    }
+            ],
+            [
+                'attribute' => 'phone',
+                'label' => 'Phones',
+                'format' => 'paragraphs',
+                'value' => function ($model) {
+                        $result = '';
+                        foreach ($model->phones as $phone) {
+                            $result .= $phone->number . "\n\n";
+                        }
+                        return $result;
+                    }
+            ],
 
+            ['class' => 'app\utilities\AuditColumn'], 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

@@ -1,8 +1,21 @@
 + Implementazione interfaccia: Appendix B.
 ---------------------------------------------------------------------------------- 
-crmapp-2.1.2		    xx-xx-2016
-- Implementazione GridView:
+crmapp-2.1.3		    xx-xx-2016
 
+---------------------------------------------------------------------------------- 
+crmapp-2.1.2		    30-09-2016
+- Implementazione GridView (capitolo 11):
+ - creata colonna per funzionalita' popover: app\utilities\AuditColumn.
+   - Risolto errore get non object property dovuto al fatto che alcuni 
+     record di customer avevano updated_by NULL!!
+ - Inserite colonne address, phone and email.
+- Messo in rem il codice per comprimere gli asset: Ci sono problemi con i 
+  riferimenti delle immagini nei css.
++ Verificare compressione asset con jar aggiornati.
+- Chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.1.2"
+  >git push origin master
 ---------------------------------------------------------------------------------- 
 crmapp-2.1.1		    28-09-2016
 - Messo in rem require_once class.utility.php in index.php.

@@ -66,9 +66,9 @@ return [
                 ],
             ],
         ],
-		'assetManager' => [
-			'bundles' => (require __DIR__ . '/assets_compressed.php')
-		],
+		//'assetManager' => [
+		//	'bundles' => (require __DIR__ . '/assets_compressed.php')
+		//],
 		'db' => require(__DIR__ . '/db.php'),
 	],
 ];

@@ -71,4 +71,13 @@ class AddressRecord extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Customer::className(), ['id' => 'customer_id']);
     }
+
+	public function getFullAddress()
+    {
+        return implode(', ',
+            array_filter(
+                $this->getAttributes(
+                    ['country', 'state', 'city', 'street', 'building', 'apartment'])));
+    }
+
 }

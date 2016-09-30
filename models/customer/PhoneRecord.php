@@ -17,4 +17,12 @@ class PhoneRecord extends ActiveRecord
             [['customer_id', 'number'], 'required'],
         ];
     }
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCustomer()
+    {
+        return $this->hasOne(Customer::className(), ['id' => 'customer_id']);
+    }
+	
 }

@@ -21,5 +21,6 @@ class ApplicationUiAssetBundle extends AssetBundle
     public $depends = [
         'yii\bootstrap\BootstrapAsset',
         'yii\web\YiiAsset',
+		'app\assets\AuditColumnAssetsBundle'
     ];
 }

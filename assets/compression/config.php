@@ -23,8 +23,8 @@ return [
 		 'yii\widgets\ActiveFormAsset',
          'yii\grid\GridViewAsset',
          'yii\validators\ValidationAsset',
-         'yii\web\YiiAsset',
-         'yii\web\JqueryAsset',
+         //'yii\web\YiiAsset',
+         //'yii\web\JqueryAsset',
     ],
     // Asset bundle for compression output:
     /*

@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
-app\assets\AllAsset::register($this);
+#app\assets\AllAsset::register($this);
+app\assets\SnowAssetsBundle::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
