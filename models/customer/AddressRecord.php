@@ -23,7 +23,7 @@ use Yii;
  */
 class AddressRecord extends \yii\db\ActiveRecord
 {
-    /**
+	/**
      * @inheritdoc
      */
     public static function tableName()

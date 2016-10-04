@@ -1,7 +1,18 @@
 + Implementazione interfaccia: Appendix B.
 ---------------------------------------------------------------------------------- 
-crmapp-2.1.3		    xx-xx-2016
+crmapp-2.2.1		    xx-xx-2016
 
+
+---------------------------------------------------------------------------------- 
+crmapp-2.2.0		    04-10-2016
+- Implementato meccanismo di Filtering su colonne address, email e phone.
+- Inserito in search di CustomerRecordSearch meccanismo di sorting.
+- Test manuale: Ok
+- chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.2.0"
+  >git push origin master
+  >git checkout -b ActiveFormPrimer
 ---------------------------------------------------------------------------------- 
 crmapp-2.1.2		    30-09-2016
 - Implementazione GridView (capitolo 11):
