@@ -16,4 +16,5 @@ use yii\filters\VerbFilter;
 class EmailController extends SubmodelController
 {
     public $recordClass = 'app\models\customer\EmailRecord';
+    public $relationAttribute = 'customer_id';
 }

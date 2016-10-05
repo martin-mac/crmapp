@@ -74,7 +74,9 @@ class AddressRecord extends \yii\db\ActiveRecord
 
 	public function getFullAddress()
     {
-        return implode(', ',
+      #Array_filter restituisce i campi non nulli/vuoti o false che poi con implode
+	  #vengono legati con una virgola e uno spazio.
+		return implode(', ',
             array_filter(
                 $this->getAttributes(
                     ['country', 'state', 'city', 'street', 'building', 'apartment'])));

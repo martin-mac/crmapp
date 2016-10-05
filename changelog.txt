@@ -1,8 +1,38 @@
-+ Implementazione interfaccia: Appendix B.
+---------------------------------------------------------------------------------- 
+crmapp-2.3.0		    xx-xx-2016
++ Implementare meccanismo accessController
++ Aggiustare tabella user
 ---------------------------------------------------------------------------------- 
 crmapp-2.2.1		    xx-xx-2016
-
-
+- Modificato in customer-records\_form.php:
+ - use yii\bootstrap\ActiveForm
+ - Inserito in ActiveForm::begin il layout = horizontal
+ - Eliminata la visualizzazione del field ID
+ - Inserito blocco if per gridView per le tabelle dettaglio:
+   Usando un dataProvider alimentato dalle funzioni getPhones(), getEmails() e
+   getAddreeses() e settati i campi (column) da visualizzare 
+ - Inserito nelle gridView dettaglio ActionColumn e modificato il controller in
+   modo che punti ai rispettivi controller. Inserito come header tasto inserimento
+   e modificato template in modo visualizzare solo update e delete.
+- Modificato submodelController.actionCreate in modo da ricevere il parametro
+  relation_id che gli viene passato ogni volta che si aggiunge un record dettaglio.
+  E parametrizzato con $relationAttribute definito in ogni controller dettaglio.
+- Eliminato da ogni _form la visualizzazione dell'id.
+- Implementata funzione storeReturnUrl() in CustomerRecordsController. 
+- Nelle funzioni update, create e delete di submodelController usata goBack() in 
+  modo da reindirizzare a update di CustomerRecordsController dopo ogni azione.
+- Per la colonna Address modificato il suo valore con una callable che unisce i 
+  vari campi in una unica stringa.
+- In CustomerRecordController modificata actionDelete in modo da cancellare 
+  prima i record dettaglio poi il record master. In actionCreate modificato
+  redirect da view a update, in modo da poter inserire subito i record dettaglio.
+- chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.2.1"
+  >git checkout master
+  >git merge ActiveFormPrimer
+  >git branch -d ActiveFormPrimer
+  >git push origin master
 ---------------------------------------------------------------------------------- 
 crmapp-2.2.0		    04-10-2016
 - Implementato meccanismo di Filtering su colonne address, email e phone.

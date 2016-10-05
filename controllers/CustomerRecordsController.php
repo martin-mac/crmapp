@@ -8,6 +8,9 @@ use app\models\customer\CustomerRecordSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\customer\EmailRecord;
+use app\models\customer\PhoneRecord;
+use app\models\customer\AddressRecord;
 
 /**
  * CustomerRecordsController implements the CRUD actions for CustomerRecord model.
@@ -63,11 +66,11 @@ class CustomerRecordsController extends Controller
      */
     public function actionCreate()
     {
-        $model = new CustomerRecord();
+        $this->storeReturnUrl();
+    	$model = new CustomerRecord();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) 
-            return $this->redirect(['view', 'id' => $model->id]);
-        #return $this->render('create', ['model' => $model,]);
+            return $this->redirect(['update', 'id' => $model->id]);
 		return $this->render('create', compact('model'));
     }
 
@@ -79,11 +82,10 @@ class CustomerRecordsController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
-
+        $this->storeReturnUrl();
+ 		$model = $this->findModel($id);
         if ($model->load(Yii::$app->request->post()) && $model->save()) 
             return $this->redirect(['view', 'id' => $model->id]);
-        #return $this->render('update', ['model' => $model,]);
         return $this->render('update', compact('model'));
     }
 
@@ -95,7 +97,10 @@ class CustomerRecordsController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        EmailRecord::deleteAll(['customer_id' => $id]);
+        PhoneRecord::deleteAll(['customer_id' => $id]);
+        AddressRecord::deleteAll(['customer_id' => $id]);
+  	    $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -115,4 +120,9 @@ class CustomerRecordsController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+    private function storeReturnUrl()
+    {
+        Yii::$app->user->returnUrl = Yii::$app->request->url;
+    }
+
 }
