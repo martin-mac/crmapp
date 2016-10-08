@@ -34,7 +34,13 @@ class ServicesController extends Controller
                         'roles' => ['manager'],
                         'allow' => true
                     ]
-                ]
+                ],
+				'denyCallback' => function ($rule, $action) {
+					Yii::$app->session->setFlash('warning', 'You are not allowed to access this operation');
+					$this->redirect(\Yii::$app->request->getReferrer());
+					#throw new \Exception('You are not allowed to access this page');
+				}
+
             ]
         ];
     }

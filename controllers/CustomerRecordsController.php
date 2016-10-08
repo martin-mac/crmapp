@@ -8,6 +8,7 @@ use app\models\customer\CustomerRecordSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 use app\models\customer\EmailRecord;
 use app\models\customer\PhoneRecord;
 use app\models\customer\AddressRecord;
@@ -29,7 +30,27 @@ class CustomerRecordsController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
-        ];
+            'access' => [
+                'class' => AccessControl::className(),					
+				'rules' => [
+					[                        
+						'actions' => ['update','create','delete'],                        
+						'roles' => ['manager'],                        
+						'allow' => true                    
+					],                    
+					[                        
+						'actions' => ['index','query','view' ],                        
+						'roles' => ['user'],                        
+						'allow' => true                    
+					],                
+				],
+				'denyCallback' => function ($rule, $action) {
+					Yii::$app->session->setFlash('warning', 'You are not allowed to access this operation');
+					$this->redirect(\Yii::$app->request->getReferrer());
+					#throw new \Exception('You are not allowed to access this page');
+				}
+            ]
+		];
     }
 
     /**

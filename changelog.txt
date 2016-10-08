@@ -1,9 +1,47 @@
----------------------------------------------------------------------------------- 
-crmapp-2.3.0		    xx-xx-2016
 + Implementare meccanismo accessController
 + Aggiustare tabella user
 ---------------------------------------------------------------------------------- 
-crmapp-2.2.1		    xx-xx-2016
+crmapp-2.3.1		    xx-xx-2016
+
+---------------------------------------------------------------------------------- 
+crmapp-2.3.0		    08-10-2016
+- Aggiornato con composer update:
+ - symfony/yaml (v3.1.5)
+ - symfony/finder (v3.1.5)
+ - symfony/event-dispatcher (v3.1.5)
+ - symfony/dom-crawler (v3.1.5)
+ - symfony/css-selector (v3.1.5)
+ - psr/log (1.0.1)
+ - symfony/debug (v3.1.5)
+ - symfony/console (v3.1.5)
+ - symfony/browser-kit (v3.1.5)
+ - phpunit/phpunit-mock-objects (3.3.1)
+ - phpdocumentor/reflection-docblock (3.1.1)
+ - phpunit/phpunit (5.5.7)
+ - codeception/codeception (2.2.5)
+- Inserito in config/web.php nella configurazione di urlManager la rule:
+ -  'rules' => [ 'customer/<id:\d+>' => 'customer-records/view' ] 
+    in modo che una richiesta URL : http://localhost/crmapp/web/customer/4
+    effettivamente sia : http://localhost/crmapp/web/customer-records/view?id=4
+ - Implementato UsernameUrlRule.Test:ok.
+- Creato un utente e manualmente (tabella auth_assignment) reso admin.
+- Inserito nel controller CustomerRecordsController il behavior AccessControl e
+  creata le rules per index, query e view accesso user, update, create e delete
+  come manager.
+- Modificato layouts/main.php come yii2 advance.
+- Copiata cartella widgets/Alert.php in app/widgets e adjust namespace.
+- Inserita funzione denyCallBack in accessController di CustomerRecordsController
+  per inserire alert in caso di accesso non abilitato e redirect stessa pagina.
+- La form Login era visualizzata con la sovrapposiione del navbar: inserito 
+  blocchi div come in login template advance.
+- Siccome Breadcrumbs non veniva visualizzato inserito in assets\ui\main.css
+  il codice css del template advance site.css. 
+- chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.3.0"
+  >git push origin master
+---------------------------------------------------------------------------------- 
+crmapp-2.2.1		    05-10-2016
 - Modificato in customer-records\_form.php:
  - use yii\bootstrap\ActiveForm
  - Inserito in ActiveForm::begin il layout = horizontal

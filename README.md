@@ -10,9 +10,12 @@ then configure database (config/db.php) and execute migration:
 
 	>./yii migrate
 
-Manually, for example with route crmapp/web/customer-records/create insert almost 
-one master record and with route crmapp/web/phone/create, crmapp/web/address/create
-and crmapp/web/email/create one or more detail record. It's possible use acceptance 
-tests for the insertion of records.
+Go to :
+	http://localhost/crmapp/web
+You are this access:
+	user    : JoeUser / 7 wonder @ American soil
+	admin   : RobAdmin / Imitate #14th symptom of apathy
+	operator: AnnieManager / Shiny 3 things hmm, vulnerable
+
 
 N.B: In the file changelog.txt there are evolution of study referring to versions.

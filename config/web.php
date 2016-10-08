@@ -41,7 +41,13 @@ return [
 		],
 		'urlManager' => [
 			'enablePrettyUrl' => true,
-			'showScriptName' => false
+			'showScriptName' => false,
+			'rules' => [
+				'customer/<id:\d+>' => 'customer-records/view',   
+                [
+					'class' => 'app\utilities\UsernameUrlRule'                
+				]				
+			] 
 		],
 		'response' => [
 			'formatters' => [
