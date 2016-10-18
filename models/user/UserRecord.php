@@ -4,6 +4,8 @@ namespace app\models\user;
 
 use Yii;
 use yii\web\IdentityInterface;
+#use app\models\user\AuthAssignment;
+
 /**
  * This is the model class for table "user".
  *
@@ -13,6 +15,7 @@ use yii\web\IdentityInterface;
  */
 class UserRecord extends \yii\db\ActiveRecord implements IdentityInterface
 {
+	public $type;
     /**
      * @inheritdoc
      */
@@ -28,7 +31,9 @@ class UserRecord extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             [['username', 'password', 'auth_key'], 'string', 'max' => 255],
-            [['username'], 'unique']
+            [['first_name', 'last_name'], 'string', 'max' => 100],
+            [['username'], 'unique'],
+			[['type'], 'required'],
         ];
     }
 
@@ -39,6 +44,8 @@ class UserRecord extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return [
             'id' => 'ID',
+			'first_name' => 'First Name',
+			'last_name' => 'last Name',
             'username' => 'Username',
             'password' => 'Password',
         ];
@@ -80,5 +87,18 @@ class UserRecord extends \yii\db\ActiveRecord implements IdentityInterface
     public static function findIdentityByAccessToken($token, $type = null)
     {
         throw new NotSupportedException('You can only login by username/password pair for now.');
+    }
+	public function getFullName()
+    {
+      #Array_filter restituisce i campi non nulli/vuoti o false che poi con implode
+	  #vengono legati con uno spazio.
+		return implode(' ',
+            array_filter(
+                $this->getAttributes(
+                    ['first_name', 'last_name'])));
+    }
+    public function getAuthoritation()
+    {
+        return $this->hasOne(AuthAssignment::className(), ['user_id' => 'id']);
     }
 }

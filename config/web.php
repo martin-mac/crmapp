@@ -2,7 +2,8 @@
 return [
 	'id' => 'crmapp',
 	'basePath' => realpath(__DIR__ . '/../'),
-	'bootstrap' => ['debug','log'],
+	//'bootstrap' => ['debug','log'],
+	'bootstrap' => ['log'],
 	'modules' => [
         'gii' => [
             'class' => 'yii\gii\Module',

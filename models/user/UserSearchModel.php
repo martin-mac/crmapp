@@ -19,7 +19,7 @@ class UserSearchModel extends UserRecord
     {
         return [
             [['id'], 'integer'],
-            [['username'], 'safe'],
+            [['username','first_name','last_name','type'], 'safe'],
         ];
     }
 
@@ -49,15 +49,26 @@ class UserSearchModel extends UserRecord
             'query' => $query,
         ]);
 
+        $query->joinWith('authoritation');
+        
+		$dataProvider->sort->attributes['type'] = [
+            'asc' => ['auth_assignment.item_name' => SORT_ASC],
+            'desc' => ['auth_assignment.item_name' => SORT_DESC],
+        ];
+		
 		if (!($this->load($params) && $this->validate())) {
             return $dataProvider;
         }
+		
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username]);
+        $query->andFilterWhere(['like', 'first_name', $this->first_name]);
+        $query->andFilterWhere(['like', 'last_name', $this->last_name]);
+        $query->andFilterWhere(['like', 'auth_assignment.item_name', $this->type]);
 
         return $dataProvider;
     }

@@ -33,12 +33,13 @@ app\assets\SnowAssetsBundle::register($this);
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Customers', 'url' => ['/customer-records/index']],	
                 ['label' => 'Services', 'url' => ['/services/index']],					
+                ['label' => 'Posts', 'url' => ['/posts/index']],                  
 			];
 
             if (Yii::$app->user->isGuest) {
                 $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
             } else {
-				$menuItems[] = ['label' => 'Profile', 'url' => ['/site/profile']];
+				$menuItems[] = ['label' => 'Profile', 'url' => ['/users/index']];
                 $menuItems[] = [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
@@ -55,7 +56,12 @@ app\assets\SnowAssetsBundle::register($this);
    <div class="container">
     <?= Breadcrumbs::widget([
         'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]) ?>
+		#'itemTemplate' => "<li><b>{link}</b></li>\n",
+		#'itemTemplate' => "<li>{link}</li>\n", 
+		#'itemTemplate' => "<li style=\"border: 2px solid black;\">{link}</li>\n", 
+		#'itemTemplate' => "<li style=\"background-color : transparent;\">{link}</li>\n", 
+        #'options' => ['class' => ['breadcrumb', 'pull-right']]
+    ]);	?>
 	<?= Alert::widget() ?>
 	<?= $content ?>
    </div>

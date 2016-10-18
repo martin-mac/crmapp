@@ -1,8 +1,53 @@
-+ Implementare meccanismo accessController
-+ Aggiustare tabella user
++ Fare in modo che se user != admin possa solo cambiare password e aggiungere email
 ---------------------------------------------------------------------------------- 
-crmapp-2.3.1		    xx-xx-2016
+crmapp-2.4.1		    xx-xx-2016
 
+---------------------------------------------------------------------------------- 
+crmapp-2.4.0		    18-10-2016
+- Modificto Profile per /users/index
++ Da Implementare meccanismo pergestire il tipo di utente.
+- Creazione migrazione init_posts: tabella posts 
+  [ post_id =>pk, post_title =>string, post_description => text, 
+    author_id => int not null ]. Foreignkey user_post_id con relazione hasOne
+	verso la tabella user [id => author_id ].
+- creazione modello : app\models\posts\Posts.
+- creazione crud:
+   search:     app\models\posts\PostsSearch
+   controller: app\controllers\PostsController
+   view :      @app/views/posts
+- Inserito behavior AccessController in PostsController che permette
+  accesso update e create solo se authenticati (roles=>['@'].
+- Prova inserimento: ok.
+- Inserito in layouts/main.php nel menu la route posts/index.
+- creata migrazione add_first_post_name_to_user per aggiungere dopo il campo id
+	first_name varchar(100)
+	last_name varchar(100)
+- Aggiunto in models\UserRecord rules e attributeLabel per questi due campi.
+- Modificato views/user/_form per field textInput.
+- Modificato views/user/index per aggiungere due colonne.
+- modificato models\UserRecordSearch:
+  - Inseriti i due campi come safe in rule.
+  - Aggiunto in search andFilterWhere.
+- creata funzione getFullName in UserRecord
+- Inserito dropDownList in _form di posts sul campo author, utilizzando
+  la funzione UserRecord->fullName.
+- Inserita colonna in index di posts con value => author.fullName
+- Modificato PostsSearch per ricerca su first_name di UserRecord tramite hasAuthor
++ Trovare modo per ricerca su fullName.
+- Modificato UserRecord per gestire il tipo di utente.
+ - Creato due activeRecord: AuthItem e AuthAssignment.
+ - In views/user/_form inserito DropDownList su type usando AuthItem->name.
+ - Creata relazione hasOne in UserRecord su AuthAssignment: getAuthoritation.
+ - Modificato UserController->create per inserire nuovo record in AuthAssignment.
+ - Modificato UserController->update per modificare il record in AuthAssignment.
+   Forse era possibile farlo in beforeSave???
+ - In views/user/index inserita colonna type usando come valore 
+   authoritation.item_name.
+ - Modificato UserRecordSearch per inserire filtro ricerca e ordinamento su Type.
+- chiusa versione:
+  >git add .
+  >git commit -m "crmapp-2.4.0"
+  >git push origin master
 ---------------------------------------------------------------------------------- 
 crmapp-2.3.0		    08-10-2016
 - Aggiornato con composer update:

@@ -5,10 +5,12 @@ namespace app\controllers;
 use Yii;
 use app\models\user\UserRecord;
 use app\models\user\UserSearchModel;
+use app\models\user\AuthAssignment;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\base\Exception;
 
 /**
  * UsersController implements the CRUD actions for UserRecord model.
@@ -34,7 +36,12 @@ class UsersController extends Controller
                         'roles' => ['admin'],
                         'allow' => true
                     ]
-                ]
+                ],
+				'denyCallback' => function ($rule, $action) {
+					Yii::$app->session->setFlash('warning', 'You are not allowed to access this operation');
+					$this->redirect(\Yii::$app->request->getReferrer());
+					#throw new \Exception('You are not allowed to access this page');
+				}
             ]			
         ];
     }
@@ -74,8 +81,26 @@ class UsersController extends Controller
     public function actionCreate()
     {
         $model = new UserRecord();
-
+        $authAssignment = new AuthAssignment();
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+			$authAssignment->user_id = $model->id;
+			$authAssignment->item_name = $model->type;
+			$authAssignment->created_at = time();
+			if (!$authAssignment->save()){
+				// Situazione che non dovrebbe mai capitare???
+				// usato ai fini di studio. Verificare come applicare le transazioni:
+				// Infatti se c'e' un errore su AuthAssignment, cancella l'utente
+				// e ripristina i valori inseriti.
+				Yii::$app->session->setFlash('warning', 'Error create authoritation');
+				//throw new Exception('Error create authoritation');
+				$attributes = $model->attributes;
+				$model->find()->where(['id'=> $attributes['id']])->one();
+				$model->delete();
+				$model->load($attributes);
+				return $this->render('create', [
+					'model' => $model,
+				]);
+			}
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -93,8 +118,14 @@ class UsersController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+		#$authAssignment = AuthAssignment::find()->where(['user_id' => $id])->one(); 
+		$authAssignment = $model->authoritation; 
+        $model->type = $authAssignment->item_name;
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+		    $authAssignment->item_name = $model->type;
+			if (!$authAssignment->save())
+				throw new Exception('Error modify authoritation');
+				
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
