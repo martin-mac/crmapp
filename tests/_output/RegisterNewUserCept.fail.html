@@ -1,21 +1,78 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
-<meta charset="UTF-8" />
-<title></title>
-<link rel="stylesheet" href="/crmapp/web/assets/e845efa5/css/bootstrap.css" />
-<link rel="stylesheet" href="/crmapp/web/assets/d81496c5/css/main.css" />
-<link rel="stylesheet" href="/crmapp/web/assets/9d11e55b/snow.css" /><meta content="_csrf" name="csrf-param" />
-    <meta content="VXRIcGVtU0MMBxcVDhQBHCAkISNVXgkpJTkJKVcDIzswLngeEiIQBw==" name="csrf-token" />
-</head>
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="0GgZbpivB4PExfWAgk0LUdKqSNJgMochqHEqHSIWWJyzP3A8_8tQ4vazwNbWIkE0p-4GsQsf8mD5H3UqRSYeqQ==">
+    <title>Login</title>
+    <link href="/crmapp/web/assets/e82eaaec/css/bootstrap.css" rel="stylesheet">
+<link href="/crmapp/web/assets/c080de23/styles.css" rel="stylesheet">
+<link href="/crmapp/web/assets/1b34bcd4/css/main.css" rel="stylesheet">
+<link href="/crmapp/web/assets/cce35617/snow.css" rel="stylesheet"></head>
 <body>
-<div class="container">
-    <div class="authorization-indicator">
-                    <span>RobAdmin</span>            <a href="/crmapp/web//site/logout">logout</a>            </div>
-	<p class="inside-snowflakes">Our CRM</p>
-	<footer class="footer">Powered by <a rel="external" href="http://www.yiiframework.com/">Yii Framework</a></footer>
-</div>
-<script src="/crmapp/web/assets/2c09aa55/jquery.js"></script>
-<script src="/crmapp/web/assets/66120aa9/yii.js"></script>
-<script src="/crmapp/web/assets/d81496c5/js/main.js"></script>
+ <div class="wrap">
+         <nav id="w0" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w0-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="/crmapp/web/">Crmapp</a></div><div id="w0-collapse" class="collapse navbar-collapse"><ul id="w1" class="navbar-nav navbar-right nav"><li><a href="/crmapp/web/site/index">Home</a></li>
+<li><a href="/crmapp/web/customer-records/index">Customers</a></li>
+<li><a href="/crmapp/web/services/index">Services</a></li>
+<li><a href="/crmapp/web/posts/index">Posts</a></li>
+<li class="active"><a href="/crmapp/web/site/login">Login</a></li></ul></div></div></nav>
+   <div class="container">
+    <ul class="breadcrumb"><li><a href="/crmapp/web/">Home</a></li>
+<li class="active">Login</li>
+</ul>		<div class="site-login">
+    <h1>Login</h1>
 
-</body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1024" height="528"></canvas></html>
+    <p>Please fill out the following fields to login:</p>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <form id="login-form" action="/crmapp/web/site/login" method="post">
+<input name="_csrf" value="0GgZbpivB4PExfWAgk0LUdKqSNJgMochqHEqHSIWWJyzP3A8_8tQ4vazwNbWIkE0p-4GsQsf8mD5H3UqRSYeqQ==" type="hidden">                <div class="form-group field-loginform-username required">
+<label class="control-label" for="loginform-username">Username</label>
+<input id="loginform-username" class="form-control" name="LoginForm[username]" aria-required="true" type="text">
+
+<p class="help-block help-block-error"></p>
+</div>                <div class="form-group field-loginform-password required">
+<label class="control-label" for="loginform-password">Password</label>
+<input id="loginform-password" class="form-control" name="LoginForm[password]" aria-required="true" type="password">
+
+<p class="help-block help-block-error"></p>
+</div>                <div class="form-group field-loginform-rememberme">
+<div class="checkbox">
+<label for="loginform-rememberme">
+<input name="LoginForm[rememberMe]" value="0" type="hidden"><input id="loginform-rememberme" name="LoginForm[rememberMe]" value="1" type="checkbox">
+Remember Me
+</label>
+<p class="help-block help-block-error"></p>
+
+</div>
+</div>                <div style="color:#999;margin:1em 0">
+                    If you forgot your password you can <a href="/crmapp/web/site/request-password-reset">reset it</a>.
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" name="login-button">Login</button>                </div>
+            </form>        </div>
+    </div>
+</div>   </div>
+ </div>
+  <footer class="footer">
+   <div class="container">
+    <p class="pull-left">© My Company 2018</p>
+    <p class="pull-right">Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+   </div>
+  </footer>
+
+<script src="/crmapp/web/assets/4c095209/jquery.js"></script>
+<script src="/crmapp/web/assets/7f4054ac/yii.js"></script>
+<script src="/crmapp/web/assets/7f4054ac/yii.validation.js"></script>
+<script src="/crmapp/web/assets/7f4054ac/yii.activeForm.js"></script>
+<script src="/crmapp/web/assets/e82eaaec/js/bootstrap.js"></script>
+<script src="/crmapp/web/assets/c080de23/scripts.js"></script>
+<script src="/crmapp/web/assets/1b34bcd4/js/main.js"></script>
+<script>jQuery(function ($) {
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Username cannot be blank."});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});}},{"id":"loginform-rememberme","name":"rememberMe","container":".field-loginform-rememberme","input":"#loginform-rememberme","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.boolean(value, messages, {"trueValue":"1","falseValue":"0","message":"Remember Me must be either \"1\" or \"0\".","skipOnEmpty":1});}}], []);
+});</script>
+
+</body></html>

@@ -9,7 +9,7 @@ modules:
             user: 'martinmac'
             dump: tests/_data/dump.sql
             populate: false
-            cleanup: true
+            cleanup: false
         - REST:
             depends: PhpBrowser
             url: http://localhost/crmapp/web

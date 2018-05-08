@@ -20,7 +20,8 @@ class CRMGuestSteps extends \AcceptanceTester
         $I->amOnPage('/site/login');
         $I->fillField('LoginForm[username]', $username);
         $I->fillField('LoginForm[password]', $password);
-        $I->click('Login');
+        #$I->click('Login');
+        $I->click('button[type=submit]');		
         $I->wait(1); // 2
 		#$I->seeCurrentUrlEquals('/');
         $I->seeCurrentUrlEquals('/crmapp/web/'); // 3
@@ -31,7 +32,7 @@ class CRMGuestSteps extends \AcceptanceTester
         $I = $this;
         $I->amOnPage('/');
         // Expecting that this button is presented on the homepage.
-        $I->click('logout');
+        $I->click('Logout');
 		$I->wait(1);
     }
 
